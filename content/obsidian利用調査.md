@@ -1,20 +1,21 @@
-### Obsidian研究
+---
+tags:
+  - obsidian
+---
 #obsidian
+### Obsidian研究
 Quartzを使ってホスティング
 obsidian git を使って自動で保存可能に
 次からはショートカットなども学習していきたい
 
-#obsidian
 dataview はメタデータのみを検索するので、contentの検索ができない
 特定のタグを含むパラグラフを抽出したりなどは無理
 
-#obsidian
 linuxでのobsidian appimageの起動方法
 https://chatgpt.com/share/67002787-5fdd-4576-8dce-6a4317db7dc1
 ~/.local/share/applications
 にobsidian.desktopを作成
 
-#obsidian
 tagged document viewer を改造する
 summaryを表示する際にページコンテンツ全てではなく、タグを含むサマリーのみを表示するようにする
 tag summary を改造したい
