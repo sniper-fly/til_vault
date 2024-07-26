@@ -17,3 +17,6 @@ MOCは、適当な一つの概念をまとめる役割を担う
 新しいまとめ記事
 https://qiita.com/YUM_3/items/80cf5705a54f70ad7e5b#obsidian-memos
 memoをとって、それからdailyログを書いて、という方法が紹介されている
+
+gihyoのわかりやすい記事
+https://gihyo.jp/article/2023/01/obsidian-03
