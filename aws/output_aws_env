@@ -1,0 +1,9 @@
+#!/bin/bash
+
+AWS_ACCESS_KEY_ID=$(terraform output -raw obsidian_til)
+AWS_SECRET_ACCESS_KEY=$(terraform output -raw obsidian_til_access_key | base64 -d | keybase pgp decrypt)
+
+echo "\
+AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY"\
+> .env.local
