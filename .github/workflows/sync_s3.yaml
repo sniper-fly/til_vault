@@ -23,10 +23,17 @@ jobs:
     - name: Fetch data from S3
       run: aws s3 sync s3://obsidian-til-miroscular ./content --delete
 
+    - name: check for changes
+      id: git_diff
+      run: |
+        git add .
+        echo "::set-output name=count::$(git diff --name-only | wc -l)"
+
     - name: Commit changes
+      if: steps.git_diff.outputs.count > 0
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
         git add .
         git commit -m 'Sync data with S3'
-        if [ $? -eq 0 ]; then git push origin v4; fi
+        git push origin v4
