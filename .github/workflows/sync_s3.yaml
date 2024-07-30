@@ -24,13 +24,15 @@ jobs:
       run: aws s3 sync s3://obsidian-til-miroscular ./content --delete
 
     - name: check for changes
-      id: git_diff
       run: |
         git add -A
-        git diff --staged --quiet || echo "{changed}={true}" >> $GITHUB_OUTPUT
+        git diff --staged --quiet || echo "git_changed=true" >> $GITHUB_ENV
+
+    - name: test
+      run: echo $git_changed
 
     - name: Commit changes
-      if: steps.git_diff.outputs.changed == "true"
+      if: env.git_changed == "true"
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
