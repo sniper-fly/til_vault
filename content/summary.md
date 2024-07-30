@@ -1,5 +1,0 @@
-
-
-```add-summary
-tags: #obsidian
-```
