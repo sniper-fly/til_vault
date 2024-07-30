@@ -26,20 +26,14 @@ jobs:
     - name: check for changes
       id: git_diff
       run: |
-        git add .
-        echo "{count}={$(git diff --name-only --staged | wc -l)}" >> $GITHUB_OUTPUT
-        echo $GITHUB_OUTPUT
-
-    - name: test
-      run: |
-        git add .
-        echo "{count}={$(git diff --name-only --staged | wc -l)}"
+        git add -A
+        git diff --staged --quiet || echo "{changed}={true}" >> $GITHUB_OUTPUT
 
     - name: Commit changes
-      if: steps.git_diff.outputs.count > 0
+      if: steps.git_diff.outputs.changed
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
-        git add .
+        git add -A
         git commit -m 'Sync data with S3'
         git push origin v4
