@@ -28,9 +28,6 @@ jobs:
         git add -A
         git diff --staged --quiet || echo "git_changed=true" >> $GITHUB_ENV
 
-    - name: test
-      run: echo $git_changed
-
     - name: Commit changes
       if: env.git_changed == 'true'
       run: |
