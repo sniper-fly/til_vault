@@ -1,7 +1,7 @@
 ---
 tags:
-  - LTY
   - obsidian
+  - LYT
 ---
 日本人の参考例
 https://github.com/A-yum3/notes/blob/main/999_HOME.md
