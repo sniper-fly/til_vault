@@ -28,6 +28,7 @@ jobs:
       run: |
         git add .
         echo "{count}={$(git diff --name-only --staged | wc -l)}" >> $GITHUB_OUTPUT
+        echo $GITHUB_OUTPUT
 
     - name: Commit changes
       if: steps.git_diff.outputs.count > 0
