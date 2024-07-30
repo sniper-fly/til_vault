@@ -28,7 +28,7 @@ echo "{any_name}={any_value}" >> $GITHUB_OUTPUT
       id: git_diff
       run: |
         git add .
-        echo "{count}={$(git diff --name-only | wc -l)}" >> $GITHUB_OUTPUT
+        echo "{count}={$(git diff --name-only --staged | wc -l)}" >> $GITHUB_OUTPUT
 
     - name: Commit changes
       if: steps.git_diff.outputs.count > 0
