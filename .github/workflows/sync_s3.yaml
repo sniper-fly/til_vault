@@ -30,7 +30,7 @@ jobs:
         git diff --staged --quiet || echo "{changed}={true}" >> $GITHUB_OUTPUT
 
     - name: Commit changes
-      if: steps.git_diff.outputs.changed
+      if: steps.git_diff.outputs.changed == "true"
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
