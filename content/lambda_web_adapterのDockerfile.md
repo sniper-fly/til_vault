@@ -3,6 +3,7 @@ tags:
   - AWS/lambda
   - Docker
   - Cloud
+  - lambda_web_adapter
 ---
 next js lambda web adapterの動作確認
 https://github.com/awslabs/aws-lambda-web-adapter/tree/main/examples/nextjs
