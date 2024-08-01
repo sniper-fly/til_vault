@@ -5,6 +5,17 @@ tags:
 ---
 typescriptの細かい文法
 
+https://www.typescriptlang.org/docs/handbook/2/mapped-types.html
+mapped Type
+as を使ったRemapping, neverでの除去、PropertyType以外のオブジェクトでのmaping
+-, + 演算子でreadonlyや ?: のフラグを消すことが出来る
+
+keyof any は全てのオブジェクトが取りうるkeyの型のunionを表してくれる
+```
+keyof any == (string | number | symbol)
+```
+また、ビルトインの`PropertyKey`というのもあり、これも同値
+
 keyof は、インターフェースなどからunion型に変換が出来る
 ```ts
 interface userInfo {
