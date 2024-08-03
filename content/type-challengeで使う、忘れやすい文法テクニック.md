@@ -5,10 +5,21 @@ tags:
 ---
 typescriptの細かい文法
 
+
+
 https://www.typescriptlang.org/docs/handbook/2/mapped-types.html
 mapped Type
 as を使ったRemapping, neverでの除去、PropertyType以外のオブジェクトでのmaping
 -, + 演算子でreadonlyや ?: のフラグを消すことが出来る
+
+
+以下での`T[number]`はunionTypeになる
+```ts
+type TupleToObject<T extends readonly (PropertyKey)[]> =
+  { [key in T[number]]: key }
+```
+https://github.com/type-challenges/type-challenges/blob/main/questions/00011-easy-tuple-to-object/README.ja.md
+
 
 keyof any は全てのオブジェクトが取りうるkeyの型のunionを表してくれる
 ```
