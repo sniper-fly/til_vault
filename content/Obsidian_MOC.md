@@ -3,6 +3,7 @@ tags:
   - obsidian
   - MOC
 ---
+[[ObsidianクライアントとQuartzでの見た目を統一したい]]
 
 [[obsidianのmyホットキー設定]]
 

@@ -28,3 +28,5 @@ Nextjs の Image はブロック要素？インライン？
       </main>
     </div>
 ```
+
+A. `rounded-l-xl` `rounded-r-xl` などを使うことで左右のどちらかにのみ丸みをつけたりできる

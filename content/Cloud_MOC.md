@@ -8,6 +8,8 @@ tags:
 ---
 AWS, Terraform などのクラウド関連技術の話
 
+[[assume role とは何なのか？]]
+
 [[lambda_web_adapterのDockerfile]]
 [[lambda_web_adapter_でnextをデプロイする際の参考資料]]
 
