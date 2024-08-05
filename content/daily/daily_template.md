@@ -6,7 +6,7 @@ tags:
 ### AOJ
 
 ### leetcode
-### type-challenge 
+### type-challenge
 
 ### Zenn執筆
 

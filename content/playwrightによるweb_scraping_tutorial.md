@@ -1,6 +1,8 @@
 ---
 tags:
   - tutorial
+  - playwright
+  - typescript
 ---
 playwrightによるweb_scraping_tutorial
 スクレイピングの詳細なチュートリアルがある
@@ -24,6 +26,9 @@ server: `http://${process.env.address}:${process.env.port}`,
 ```
 このセレクタでなぜが値が取得できない
 
-querySelectorAllなどもあるので次回以降使ってみたい
 
 モックブラウザをそのまま起動して開発者ツールを使うにはどうすれば？
+```ts
+  await browser.close();
+```
+上記の表示をコメントアウトすれば良い

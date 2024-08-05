@@ -28,3 +28,7 @@ export default defineConfig({
   },
 });
 ```
+
+[[ReactTesting_tutorial]] に
+`Property 'toBeInTheDocument' does not exist on type 'Assertion<HTMLElement>'`
+の解決法を記載

@@ -2,6 +2,7 @@
 tags:
   - business
   - idea
+  - MOC
 ---
 
 国産サーバーレスnginxフォワードプロキシ

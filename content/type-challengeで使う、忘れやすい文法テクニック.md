@@ -5,7 +5,19 @@ tags:
 ---
 typescriptの細かい文法
 
+`PromiseLike`
+thenキーを持つようなオブジェクトもPromiseLikeの部分型として判定される
 
+[ユニオン分配 (union distribution) | TypeScript入門『サバイバルTypeScript』](https://typescriptbook.jp/reference/type-reuse/union-distribution)
+```ts
+type NotDistribute<T> = [T] extends [string] ? true : false;
+```
+ユニオン分配を起こさせない方法がある
+```ts
+type A = NotDistribute<string>; // true
+type B = NotDistribute<number>; // false
+type C = NotDistribute<string | number>; // false `string | number`型は`string`型の部分型ではない
+```
 
 https://www.typescriptlang.org/docs/handbook/2/mapped-types.html
 mapped Type

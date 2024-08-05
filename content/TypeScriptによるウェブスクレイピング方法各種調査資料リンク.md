@@ -5,20 +5,20 @@ tags:
 ---
 
 playwrightなしで純粋にウェブページを解析してスクレイピングする方法
-https://qiita.com/Syoitu/items/6a136e3b8d2fb65e51a2
+[TypeScriptでスクレイピングしてみよう #JavaScript - Qiita](https://qiita.com/Syoitu/items/6a136e3b8d2fb65e51a2)
 
 cheerioというライブラリが使えそう
 jquery風の文法が使える
-https://github.com/cheeriojs/cheerio
+[GitHub - cheeriojs/cheerio: The fast, flexible, and elegant ...](https://github.com/cheeriojs/cheerio)
 
 node-html-parserというのも人気
-https://github.com/node-projects/node-html-parser
+[GitHub - node-projects/node-html-parser: A very fast HTML pa...](https://github.com/node-projects/node-html-parser)
 
 様々な選択肢がある
-https://www.zenrows.com/alternative/cheerio
+[7 Best Cheerio JS Alternatives for Developers - ZenRows](https://www.zenrows.com/alternative/cheerio)
 
 jsdomなども使える
-https://qiita.com/sueasen/items/9e3498d79d4cc10ba553
+[Node.js でスクレイピングのメモ（jsdom） #JavaScript - Qiita](https://qiita.com/sueasen/items/9e3498d79d4cc10ba553)
 
 GPTによる回答
 https://chatgpt.com/share/b4a2609c-98c9-4576-ac5b-6e7ec34223f7

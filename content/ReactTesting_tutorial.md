@@ -5,7 +5,7 @@ tags:
   - tutorial
 ---
 以下のチュートリアルを進めてわかったことを書く
-https://www.robinwieruch.de/react-testing-library/
+[React Testing Library Tutorial](https://www.robinwieruch.de/react-testing-library/)
 
 it は別に describe の中になくてもよい
 RSpecと似ている
@@ -22,9 +22,28 @@ import { describe, it, expect } from 'vitest';
 だが、vscodeの静的解析でエラーになってしまい鬱陶しい
 
 [Property 'toBeInTheDocument' does not exist on typ...](https://github.com/testing-library/jest-dom/issues/546#issuecomment-2142356024)
+```ts
 import "@testing-library/jest-dom";
+```
 を全てのtsテストファイルに入れるしか解決できる方法がなかった
 
 [How to Fix the "Cannot find name 'describe'" Error...](https://medium.com/@tariibaba/typescript-cannot-find-name-describe-b72f3009ea86)
 tsconfigのinclude, excludeは設定しておいた方が良さそう
 productionビルド時に余計な型が入ってしまいそう
+
+
+`getByText` 以外にも色々
+
+`getByRole`
+アクセシブルネームの要素が存在するかをチェックする
+例えば、textbox
+厳密にテキストが存在するか、ではなくロールベースでHTMLのセマンティクスに沿ったテストができる
+これにより、テスト専用のidをつけたりなどをしなくて済む
+
+下記のように空のroleを検索することで、その画面で利用可能なロール一覧を見ることが出来る
+```ts
+screen.getByRole('')
+```
+
+implicit -> 暗黙
+explicit -> 明示的
