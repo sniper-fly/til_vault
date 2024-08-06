@@ -7,8 +7,6 @@ kanban-plugin: board
 ## Planning
 
 - [ ] ts の genericsで再帰が使える件について
-- [ ] lambda関数にnpmバンドルしたnodeプロジェクトをzipデプロイする
-	https://github.com/sniper-fly/typescript-lambda-function-with-terraform
 - [ ] AWS IAMユーザー作成と.envの自動作成まで
 - [ ] obsidian をubuntuでクイックランチャーからすぐに使えるようにする方法
 - [ ] AWSハンズオンをTerraform でやってみた
@@ -19,6 +17,8 @@ kanban-plugin: board
 
 ## In Progress
 
+- [ ] lambda関数にnpmバンドルしたnodeプロジェクトをzipデプロイする
+	https://github.com/sniper-fly/typescript-lambda-function-with-terraform
 
 
 ## Complete
