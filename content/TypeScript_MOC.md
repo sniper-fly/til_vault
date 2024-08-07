@@ -3,6 +3,8 @@ tags:
   - typescript
   - MOC
 ---
+[[T(0)とFirst(T)の違い]]
+
 [[ts,jsで文字列の特定の文字を複数回置換する方法]]
 
 [[vitest環境構築]]

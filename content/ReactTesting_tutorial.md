@@ -47,3 +47,40 @@ screen.getByRole('')
 
 implicit -> 暗黙
 explicit -> 明示的
+
+getBy
+queryBy
+findBy
+これらがsearch variants
+
+getByは取得に失敗した時にエラーを出す副作用がある
+これは便利だが、例えば存在すべきでないテキストを確かめる時に不便
+```ts
+    expect(screen.getByText(/Searches for JavaScript/)).toBeNull();
+```
+このようなユースケースではqueryByが使える
+
+async await, つまりpromiseが関わる場合はfindByを使う
+useEffect内でsetStateしたときに、再描画されるのでそれを観測してテストする
+
+但し、待ち時間が長すぎると失敗する
+```tsx
+  React.useEffect(() => {
+    const loadUser = async () => {
+      // 5秒待つ
+      await new Promise((resolve) => setTimeout(resolve, 5000));
+      const user = await getUser();
+      setUser(user);
+    };
+
+    loadUser();
+  }, []);
+```
+
+また、以下のように2回描画する場合でも、promiseが関わらなければfindByは不要
+```tsx
+  React.useEffect(() => {
+    setUser({ id: '1', name: 'Robin' });
+  }, []);
+```
+

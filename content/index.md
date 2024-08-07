@@ -25,8 +25,10 @@ FrontendMentorでよく使ったテクニック、奮闘記
 [[Tutorials_MOC]]
 
 ## その他
+[[Zennメモ書き]]
+
 [[Other_languages_MOC]]
-python, Rubyなど
+python, C++, etc.
 
 [[Try&Error_MOC]]
 疑問点、よくわかっていないこと、新しい解決策を欲しているもの
