@@ -25,6 +25,8 @@ FrontendMentorでよく使ったテクニック、奮闘記
 [[Tutorials_MOC]]
 
 ## その他
+[[個人開発_MOC]]
+
 [[Zennメモ書き]]
 
 [[Other_languages_MOC]]

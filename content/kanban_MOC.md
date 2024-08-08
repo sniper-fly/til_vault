@@ -4,10 +4,12 @@ tags:
   - kanban
   - TODO
 ---
-- [[TODO]]
-	- [[ChatGPTを活用したソフトウェア開発]]
+[[TODO]]
+  [[ChatGPTを活用したソフトウェア開発]]
 
-- [[zenn_neta]]
+[[作りたいものリスト]]
 
-- [[kanban_template]]
+[[zenn_neta]]
+
+[[kanban_template]]
 

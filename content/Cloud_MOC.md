@@ -8,6 +8,8 @@ tags:
 ---
 AWS, Terraform などのクラウド関連技術の話
 
+[[ECRの作成からdocker_pushまで一貫してterraformで行えるようにする]]
+
 [[Lambdaの利用料金,60億GB秒月,について]]
 
 [[terraformでECRを作ってイメージをpushする]]
