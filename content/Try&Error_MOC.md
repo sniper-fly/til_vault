@@ -3,6 +3,12 @@ tags:
   - MOC
   - tryAndError
 ---
+
+
+[[prismaのcreateManyを使ってネストしたクエリを作れるか？]]
+
+[[mbind Operation not permitted を防ぐ]]
+
 [[DBeaverでのMysql接続時エラー,Public Key Retrieval is not allowed]]
 
 [[node 20.6.1 でplaywrightを実行するとバグるのでadsfでバージョンを20.16.0 にする]]

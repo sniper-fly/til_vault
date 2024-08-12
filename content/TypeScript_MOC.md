@@ -3,6 +3,8 @@ tags:
   - typescript
   - MOC
 ---
+[[prismaのcreateManyを使ってネストしたクエリを作れるか？]]
+
 [[T(0)とFirst(T)の違い]]
 
 [[ts,jsで文字列の特定の文字を複数回置換する方法]]
