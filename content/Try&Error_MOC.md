@@ -3,7 +3,9 @@ tags:
   - MOC
   - tryAndError
 ---
+[[playwrightをDockerで動かすには？]]
 
+[[docker上で動いているランタイムを使ってtsxでデバッグするには]]
 
 [[prismaのcreateManyを使ってネストしたクエリを作れるか？]]
 

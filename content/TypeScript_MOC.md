@@ -3,7 +3,12 @@ tags:
   - typescript
   - MOC
 ---
+
+
+[[prismaで既存のレコードを全て削除したい]]
 [[prismaのcreateManyを使ってネストしたクエリを作れるか？]]
+
+[[typescriptでオブジェクトをjsonとしてファイルに出力する]]
 
 [[T(0)とFirst(T)の違い]]
 
