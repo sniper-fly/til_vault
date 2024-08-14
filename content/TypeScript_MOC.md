@@ -3,7 +3,8 @@ tags:
   - typescript
   - MOC
 ---
-
+[[schema.prismaのリレーション名変更はDBを変更せずに可能]]
+[[Promise.raceで、自前の関数を定義してどちらが先に返ってきたかを正確に判定する方法]]
 
 [[prismaで既存のレコードを全て削除したい]]
 [[prismaのcreateManyを使ってネストしたクエリを作れるか？]]
