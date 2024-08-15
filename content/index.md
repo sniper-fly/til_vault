@@ -40,7 +40,7 @@ python, C++, etc.
 [[OUJ_MOC]]
 Open University Japan, 放送大学関連
 
-[[business_MOC]]
+[[money_MOC]]
 
 [[kanban_MOC]]
 タスク管理

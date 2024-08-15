@@ -4,8 +4,8 @@ tags:
   - test
 ---
 
-vitest環境構築
-https://www.robinwieruch.de/vitest-react-testing-library/
+vitest with React Testing Library環境構築
+[Vitest with React Testing Library](https://www.robinwieruch.de/vitest-react-testing-library/)
 
 npm i vitest -D
 ののち
@@ -13,7 +13,7 @@ npm i vitest -D
 スクリプトをpackage.jsonに設定
 
 npm i jsdom -D
-https://stackoverflow.com/questions/72146352/vitest-defineconfig-test-does-not-exist-in-type-userconfigexport
+[typescript - Vitest defineConfig, 'test' does not exist in t...](https://stackoverflow.com/questions/72146352/vitest-defineconfig-test-does-not-exist-in-type-userconfigexport)
 
 vite.config.tsを下記のように書き換える
 ```ts
