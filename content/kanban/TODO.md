@@ -97,12 +97,9 @@ tags:
 	Linuxの仕組み図解
 
 
-## その他勉強方法
-
-
-
 ## In Progress
 
+- [ ] OUJ履修登録
 
 
 ## Complete
@@ -110,10 +107,14 @@ tags:
 - [ ] ECRのコンテナを使うようにDockerfileを修正
 
 
+## その他勉強方法
+
+
+
 
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false]}
+{"kanban-plugin":"board","list-collapse":[false,false,null,false]}
 ```
 %%

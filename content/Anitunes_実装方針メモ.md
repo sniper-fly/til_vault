@@ -2,6 +2,35 @@
 tags:
   - 個人開発
 ---
+
+===================================================
+[[2024-08-16]]
+[Get Multiple Catalog Songs by ISRC | Apple Developer Documen...](https://developer.apple.com/documentation/applemusicapi/get_multiple_catalog_songs_by_isrc)
+ISRCなるものが存在していて、apple musicなどもこれを用いて曲検索ができる
+国際的に曲に割り振られる唯一のコード
+
+[ISRC Search](https://isrcsearch.ifpi.org/)
+曲名、歌手名からISRCの検索が可能
+かつISRCからSpotify APIのsearchが行える
+→Aniplaylistを介さなくてもDBを作成できる可能性がある
+
+spotifyは`300*300` の画像を`40*40`にして表示してる
+
+addedTimes はしょっちゅう更新されるとupdatedAtが無意味なカラムになってしまう
+hasOneなどで別のテーブルに分離するが吉
+
+spotifyもapple musicもISO 3166 alpha-2に準拠しているので、available_marketテーブルではなくcountry codeテーブルにしてどちらのテーブルでも使えるように
+
+ animate-pulse でスケルトンが表示されている場合、その子要素が何かを表示するまでずっと待ってしまう
+animate-pulse クラスを持っている子要素はこのクラスを発見次第それ以上探索しないようにしたい
+
+また、スクロールイベントを使って何回かスクロールして要素が全て表示しきれたことを確認してから探索する、など
+
+検索クエリに
+?types=Ending
+などをつけると精度があがる
+
+===================================================
 SQLで直接INSERTができたら、アプリケーションの問題
 できなければ、SQLについて勉強し直す
 

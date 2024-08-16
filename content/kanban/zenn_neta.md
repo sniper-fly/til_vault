@@ -11,6 +11,7 @@ kanban-plugin: board
 - [ ] AWSハンズオンをTerraform でやってみた
 - [ ] how to use spotify SDK
 - [ ] comment tagged templates 拡張機能が動作しない件(競合)
+- [ ] Playwrightで複数の子要素に対して操作を行う方法
 
 
 ## In Progress

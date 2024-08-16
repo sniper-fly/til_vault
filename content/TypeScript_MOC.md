@@ -4,6 +4,7 @@ tags:
   - MOC
 ---
 ## prisma
+[[prismaで特定のカラムにindexをつける方法]]
 [[prismaで作ったレコードにupdatedAtやcreatedAtを追加する方法]]
 [[schema.prismaのリレーション名変更はDBを変更せずに可能]]
 [[prismaで既存のレコードを全て削除したい]]
