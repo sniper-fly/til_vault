@@ -4,11 +4,16 @@ tags:
   - MOC
 ---
 ## prisma
+[[prismaでfindOrCreateのように既存レコードがない場合にのみ作成する方法(upsertの使い方)]]
+[[prismaで最初の数レコードをskipする方法]]
+[[prismaでDBに格納できる文字列の長さを指定する方法]]
 [[prismaで特定のカラムにindexをつける方法]]
 [[prismaで作ったレコードにupdatedAtやcreatedAtを追加する方法]]
 [[schema.prismaのリレーション名変更はDBを変更せずに可能]]
 [[prismaで既存のレコードを全て削除したい]]
 [[prismaのcreateManyを使ってネストしたクエリを作れるか？]]
+
+[[typescriptでのエラーログの簡易的な残し方、ファイル書き出し方法]]
 
 [[spotify ts sdkでのaccess token取得方法(how to start project)]]
 

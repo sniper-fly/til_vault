@@ -106,6 +106,10 @@ createMultipleRecords()
   });
 ```
 
+upsertの使い方に関しては以下も
+[[prismaでfindOrCreateのように既存レコードがない場合にのみ作成する方法(upsertの使い方)]]
+
+
 ##### Official Guidance
 According to the [official answer](https://github.com/prisma/prisma/discussions/18505) from the Prisma team, an array can be passed in a nested `createMany` call, but not in a nested create query. They recommend invoking a create query inside a loop to create multiple records.
 

@@ -12,12 +12,12 @@ playwrightによるスクロールの対応
 
 ### 1. 要素までスクロール
 特定の要素が表示されるまでスクロールするには、`scrollIntoViewIfNeeded` メソッドを使います。
-
+[scrollIntoViewIfNeeded | Locator | Playwright](https://playwright.dev/docs/api/class-locator#locator-scroll-into-view-if-needed)
 ```ts
 // 特定の要素までスクロール
 await page.locator('your-selector').scrollIntoViewIfNeeded();
 ```
-このメソッドは、要素が表示されていない場合にのみ、要素が画面に表示されるようにスクロールします。
+このメソッドは、特定の要素のlocatorの場所までスクロールします。
 
 ### 2. ページ全体をスクロール
 ページ全体をスクロールするには、JavaScriptを使ってスクロールアクションを実行します。

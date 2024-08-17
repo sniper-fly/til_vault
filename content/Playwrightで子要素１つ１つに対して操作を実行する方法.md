@@ -31,3 +31,23 @@ nth(), first(), last() などを使って１個の要素を見つけるように
 ```
 
 また、`:`コロン などがクラス名に含まれている場合はエスケープが必要
+
+また、locator().all()で該当するlocator全てを取得し、それらに対する操作をPromiseでラップしてからPromise.allで全ての結果が返るまで待つ、という処理のほうが並行処理も使えるし、mapなどよりモダンな記法で書くことが出来る
+```ts
+  const items = await page.locator("div.grid.grid-cols-1 > *").all();
+  return Promise.all(
+    items.map(async (item) => {
+      const spotifyUrl = await item
+        .locator("a[href*='open.spotify.com']")
+        .getAttribute("href");
+      const appleMusicUrl = await item
+        .locator("a[href*='music.apple.com']")
+        .getAttribute("href");
+      const songType = await item
+        .locator("span.hidden.xl\\:inline-block")
+        .innerText();
+      return { spotifyUrl, appleMusicUrl, songType };
+    })
+  );
+```
+
