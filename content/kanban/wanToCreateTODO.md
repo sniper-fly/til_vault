@@ -11,21 +11,23 @@ kanban-plugin: board
 - [ ] シネマシティ自動予約拡張機能
 - [ ] ウェブサイトブロック拡張機能
 - [ ] 検索結果ブラックリスト拡張機能
+- [ ] AniLinX
+	AniListやMyAnimeListから公式Xを全てフォローできるようにするwebアプリ
 - [ ] AniList自動更新
 	unextをスクレイピング
 - [ ] AOJ CLI改造
 - [ ] AniList英語学習アプリ
+- [ ] 2次元twitter client
+	全ての情報を1スレッドにするのではなくアカウントごとに縦に並べて横にくっつける
+	アニメ毎にツイッターを整理できるようにする
+- [ ] obsidianでMOCごと、tag毎にタブの色を変更する
 - [ ] アニメキャラクター当てクイズ
 - [ ] プロジェクトごとのzsh history
 - [ ] サーバーレスフォワードプロキシ
 - [ ] 自宅RAIDストレージサーバー
 - [ ] 雨検知システム
-- [ ] Taskchute watchアプリ
+- [ ] Taskchute watchOSアプリ
 - [ ] 正規表現ドリル投稿サイト
-- [ ] 2次元twitter client
-	全ての情報を1スレッドにするのではなくアカウントごとに縦に並べて横にくっつける
-	アニメ毎にツイッターを整理できるようにする
-- [ ] obsidianでMOCごと、tag毎にタブの色を変更する
 
 
 ## In Progress

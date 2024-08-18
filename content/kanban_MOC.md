@@ -9,7 +9,7 @@ tags:
 [[TODO]]
   [[ChatGPTを活用したソフトウェア開発]]
 
-[[作りたいものリスト]]
+[[wanToCreateTODO]]
 
 [[zenn_neta]]
 

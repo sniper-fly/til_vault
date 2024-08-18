@@ -13,6 +13,10 @@ tags:
 [[prismaで既存のレコードを全て削除したい]]
 [[prismaのcreateManyを使ってネストしたクエリを作れるか？]]
 
+[[typescriptでログファイルに日付,時刻情報を文字列出力する]]
+
+[[typescript dotenvのconfigをimportでもいじる方法]]
+
 [[typescriptでのエラーログの簡易的な残し方、ファイル書き出し方法]]
 
 [[spotify ts sdkでのaccess token取得方法(how to start project)]]
