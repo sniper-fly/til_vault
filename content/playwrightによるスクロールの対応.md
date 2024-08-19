@@ -40,9 +40,8 @@ await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
 無限スクロールがあるページで、すべてのコンテンツを読み込むためにスクロールを繰り返すこともできます。
 
 ```ts
-let previousHeight;
 while (true) {
-    previousHeight = await page.evaluate('document.body.scrollHeight');
+    const previousHeight = await page.evaluate('document.body.scrollHeight');
     await page.evaluate('window.scrollTo(0, document.body.scrollHeight)');
     await page.waitForTimeout(2000); // スクロール後に少し待機
     const newHeight = await page.evaluate('document.body.scrollHeight');

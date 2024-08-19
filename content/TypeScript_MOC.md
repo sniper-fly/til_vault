@@ -4,6 +4,8 @@ tags:
   - MOC
 ---
 ## prisma
+[[Prismaで複合主キーを設定する]]
+[[hasOne relationを利用するメリット]]
 [[prismaでfindOrCreateのように既存レコードがない場合にのみ作成する方法(upsertの使い方)]]
 [[prismaで最初の数レコードをskipする方法]]
 [[prismaでDBに格納できる文字列の長さを指定する方法]]
