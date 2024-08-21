@@ -7,18 +7,19 @@ kanban-plugin: board
 ## Planning
 
 - [ ] アニメ名 ＋ 曲名 検索ではなくアニメ名検索にしてリクエスト数を減らす
-- [ ] albumデータをspotifyで検索して正しくtracksを作成できるようにする
 
 
 ## In Progress
 
-- [ ] bandwidthの削減
-- [ ] playwrightが本当にリクエストごとにIPを変えているかテスト
-- [ ] APAnimeTitleテーブル作成
+- [ ] albumデータをspotifyで検索して正しくtracksを作成できるようにする
+- [ ] saveSpotifyTrackなどの作り直し：APSongデータとの関連付け
 
 
 ## Complete
 
+- [ ] playwrightが本当にリクエストごとにIPを変えているかテスト
+- [ ] bandwidthの削減
+- [ ] APAnimeTitleテーブル作成
 - [ ] DB構造の大規模変更（Anime hasMany APSong, APSong hasOne SpotifyTrack ,,,）
 - [ ] 無限スクロールの対応
 - [ ] リクエスト毎 or timeoutで失敗した時に別プロキシに切り替えるようにする

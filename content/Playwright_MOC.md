@@ -4,6 +4,10 @@ tags:
   - playwright
 title:
 ---
+[[playwrightでリクエスト毎にきちんとプロキシが変化しているかの調査結果]]
+
+[[playwrightでrouteを使って不要なjsフェッチをしないようにして通信量を削減する]]
+
 [[playwrightで、指定したセレクタの要素が存在していない場合にtrueを返すには？]]
 
 [[playwrightによるスクロールの対応]]
