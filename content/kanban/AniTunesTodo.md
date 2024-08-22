@@ -13,10 +13,13 @@ kanban-plugin: board
 
 - [ ] albumデータをspotifyで検索して正しくtracksを作成できるようにする
 - [ ] saveSpotifyTrackなどの作り直し：APSongデータとの関連付け
+	createAPSong関数の作成
 
 
 ## Complete
 
+- [ ] encodeSearchQueryの改修
+- [ ] scrapeUrlsがAPでのアニメタイトルや曲のタイトルを取得できるように改良
 - [ ] playwrightが本当にリクエストごとにIPを変えているかテスト
 - [ ] bandwidthの削減
 - [ ] APAnimeTitleテーブル作成
