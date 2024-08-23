@@ -20,6 +20,7 @@ kanban-plugin: board
 - [ ] 2次元twitter client
 	全ての情報を1スレッドにするのではなくアカウントごとに縦に並べて横にくっつける
 	アニメ毎にツイッターを整理できるようにする
+- [ ] prismaのhasOneの外部キーに指定したカラムからunique制約を取り除けないバグを修正してOSSコミットする
 - [ ] obsidianでMOCごと、tag毎にタブの色を変更する
 - [ ] アニメキャラクター当てクイズ
 - [ ] プロジェクトごとのzsh history

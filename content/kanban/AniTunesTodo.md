@@ -6,18 +6,23 @@ kanban-plugin: board
 
 ## Planning
 
-- [ ] アニメ名 ＋ 曲名 検索ではなくアニメ名検索にしてリクエスト数を減らす
+- [ ] timeoutした際に数秒時間をおいて3回までリトライする
+- [ ] APに追加された曲をAnimeテーブルに自動ヒモ付
+- [ ] AnimeThemeAPIのupdateを自動更新して反映させる
 
 
 ## In Progress
 
-- [ ] albumデータをspotifyで検索して正しくtracksを作成できるようにする
-- [ ] saveSpotifyTrackなどの作り直し：APSongデータとの関連付け
-	createAPSong関数の作成
+- [ ] 大量検索結果に対応するため、スクロール即データインプットを実現する
+- [ ] scroll, waitforskeltonのtimeoutの決め打ちをやめてresultの数に比例するようにする
 
 
 ## Complete
 
+- [ ] アニメ名 ＋ 曲名 検索ではなくアニメ名検索にしてリクエスト数を減らす
+- [ ] saveSpotifyTrackなどの作り直し：APSongデータとの関連付け
+	createAPSong関数の作成
+- [ ] albumデータをspotifyで検索して正しくtracksを作成できるようにする
 - [ ] encodeSearchQueryの改修
 - [ ] scrapeUrlsがAPでのアニメタイトルや曲のタイトルを取得できるように改良
 - [ ] playwrightが本当にリクエストごとにIPを変えているかテスト

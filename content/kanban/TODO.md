@@ -12,7 +12,6 @@ tags:
 	https://github.com/cnc4e/terraform-practice
 - [ ] コンビニレシートを使ったDB設計
 	https://engineers.weddingpark.co.jp/mysql-database-design/
-- [ ] AniPlaylistをスクレイピング
 - [ ] 曲とアニメの対応DBを作る
 - [ ] [[ChatGPTを活用したソフトウェア開発]]
 - [ ] React sentry エラー監視
@@ -99,11 +98,12 @@ tags:
 
 ## In Progress
 
-- [ ] OUJ履修登録
 
 
 ## Complete
 
+- [ ] AniPlaylistをスクレイピング
+- [ ] OUJ履修登録
 - [ ] ECRのコンテナを使うようにDockerfileを修正
 
 
