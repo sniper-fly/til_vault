@@ -5,6 +5,8 @@ tags:
 
 typescriptでのエラーログの簡易的な残し方、ファイル書き出し方法
 ```ts
+import * as fs from "fs";
+
 const err = e as Error;
 console.error(e);
 const errorLog = {

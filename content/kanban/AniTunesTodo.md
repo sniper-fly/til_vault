@@ -13,8 +13,8 @@ kanban-plugin: board
 
 ## In Progress
 
-- [ ] 大量検索結果に対応するため、スクロール即データインプットを実現する
 - [ ] scroll, waitforskeltonのtimeoutの決め打ちをやめてresultの数に比例するようにする
+- [ ] 大量検索結果に対応するため、スクロール即データインプットを実現する
 
 
 ## Complete

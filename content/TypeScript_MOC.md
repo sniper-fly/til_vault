@@ -4,6 +4,7 @@ tags:
   - MOC
 ---
 ## prisma
+[[prismaで外部キーをuniqueにしているとき、prisma migrateしても変更を検知しない（手動でマイグレーションファイルを作る方法）]]
 [[Prismaで複合主キーを設定する]]
 [[hasOne relationを利用するメリット]]
 [[prismaでfindOrCreateのように既存レコードがない場合にのみ作成する方法(upsertの使い方)]]
@@ -14,6 +15,8 @@ tags:
 [[schema.prismaのリレーション名変更はDBを変更せずに可能]]
 [[prismaで既存のレコードを全て削除したい]]
 [[prismaのcreateManyを使ってネストしたクエリを作れるか？]]
+
+[[Typescript satisfiesの使い方]]
 
 [[typescriptでログファイルに日付,時刻情報を文字列出力する]]
 
