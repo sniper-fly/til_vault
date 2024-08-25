@@ -6,6 +6,8 @@ tags:
 playwrightで、指定したセレクタの要素が存在していない場合にtrueを返すには？
 以下の方法で、locatorがDOMにアタッチされていない場合にtrueを返すことができます。
 
+
+
 1. count メソッドを使用して要素の存在を確認
 ```ts
 const isDetached = (await page.locator('your-selector').count()) === 0;

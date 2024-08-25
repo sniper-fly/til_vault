@@ -4,6 +4,62 @@ tags:
 ---
 [[AniTunesTodo]]
 
+
+
+
+===================================================
+[[2024-08-25]]
+
+APIのレスポンスを使えば、超シンプルに実装可能かも
+しかも曲ごとに割り振られている隠れIDも利用可能
+紐付けられているアニメのタイトルも複数取得可能
+表記ゆれ対応にも光明が見える
+
+問題は、何回リクエストが来るかわからない
+検索結果が十分に多ければ3回
+16個以内なら2回
+0個なら1回
+
+waitForResponseを仕掛けておくと、来ないリクエストを待ってしまってブロッキングしてしまう可能性がある
+
+方略：
+主スレッド
+div.sentinelがある場合その場所にスクロールする
+
+並行処理
+
+最初
+waitForResponseで待つ
+
+[Customize the field names of join table in implicit many-to-...](https://github.com/prisma/prisma/issues/22933)
+implicit many to many relationで作成されるキーの名前は編集できない
+逆に言うとこれを編集する機能はPRを上げられるということ
+
+===================================================
+[[2024-08-24]]
+
+検索結果数の取得
+
+div.sentinelが無限ローディングを司っている
+
+fa fa-spinner fa-pulse fa-fw fa-3x
+
+読み込みを終わっていい条件
+→div.sentinelが存在しない＆＆div.animate-pulseが存在しない
+
+![[Screenshot from 2024-08-24 17-15-52.png]]
+
+プロキシの場合に送られてくるjs query のurl
+https://p4b7ht5p18-3.algolianet.com/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(4.17.0)%3B%20Browser%20(lite)&x-algolia-api-key=cd90c9c918df8b42327310ade1f599bd&x-algolia-application-id=P4B7HT5P18
+
+自分のpcからだと以下のようになる
+https://p4b7ht5p18-dsn.algolia.net/
+
+そもそもAPIを呼んだ時点で実はほとんどデータが読み込めていて、
+animate-pulseはブラウザの表示を軽くするために設けられたストッパーだとしたら？
+→div.sentinelを追いかけ、APIのレスポンスを待つだけで、
+セレクタなども不要で全てのデータを得られるのでは？
+
 ===================================================
 [[2024-08-23]]
 

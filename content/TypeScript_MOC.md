@@ -16,6 +16,10 @@ tags:
 [[prismaで既存のレコードを全て削除したい]]
 [[prismaのcreateManyを使ってネストしたクエリを作れるか？]]
 
+[[Promiseの外からリゾルバを呼ぶ]]
+
+[[TypeScriptエラーハンドリング]]
+
 [[Typescript satisfiesの使い方]]
 
 [[typescriptでログファイルに日付,時刻情報を文字列出力する]]
