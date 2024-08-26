@@ -5,7 +5,70 @@ tags:
 [[AniTunesTodo]]
 
 
+===================================================
+[[2024-08-26j]]
 
+まずはマイグレーション
+
+ページ描画よりAPIの方が通知が速いからsentinelが0だったりする？
+
+sentinelがある限り、スクロールする
+responseが来るタイミングと画面描画のタイミングがズレる
+responseが来るタイミングの方が速いため、
+最後のレスポンスが来ているのにsentinelが存在する場合がある
+
+画面描画を規準に待たないといけない
+- 現時点で存在しない要素が出てくるまで待つ
+- songsの数が増えるまで待つ
+
+waitForLoadStateでは最初の読み込みまでは待てるが、逐次的な更新を待つのは難しい
+```ts
+  await page.waitForLoadState("domcontentloaded");
+```
+
+セレクタを一生懸命探してHTMLを解析してデータを抜き取っているスクレイピングの様子を供養
+```ts
+async function getAniPlaylistSongInfo(items: Locator[]) {
+  return Promise.all(
+    items.map(async (item) => {
+      const songType = await item
+        .locator("span.hidden.xl\\:inline-block")
+        .innerText();
+      const animeTitle = await item
+        .locator("h3.hidden.font-medium")
+        .innerText();
+      const songTitle = await item.locator("span.break-words").innerText();
+      const result: AniPlaylistSongInfo = { songType, animeTitle, songTitle };
+
+      if ((await item.locator("a[href*='open.spotify.com']").count()) > 0) {
+        const spotifyUrl = await item
+          .locator("a[href*='open.spotify.com']")
+          .getAttribute("href");
+        result["spotifyUrl"] = spotifyUrl!;
+      }
+      if ((await item.locator("a[href*='music.apple.com']").count()) > 0) {
+        const appleMusicUrl = await item
+          .locator("a[href*='music.apple.com']")
+          .getAttribute("href");
+        // result["appleMusicUrl"] = appleMusicUrl!;
+      }
+      return result;
+    })
+  );
+}
+```
+
+APIで取ってきたデータが画面描画に使われるまで待つ方法でピッタリ待つことに成功
+```ts
+    const res = await page.waitForResponse(
+      (response) =>
+        response.url().includes("p4b7ht5p18") && response.status() === 200
+    );
+    // 通信で取得したjsonの要素が表示されるまで待つ
+    const json: APsongJson = await res.json();
+    const link = json.results[0].hits[0].links[0].link;
+    await page.locator(`a[href="${link}"]`).waitFor();
+```
 
 ===================================================
 [[2024-08-25]]

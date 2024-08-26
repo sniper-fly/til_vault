@@ -3,6 +3,8 @@ tags:
   - MOC
   - tryAndError
 ---
+[[ubuntuのターミナル上でクリップボードにコピー(xsel command)]]
+
 [[prismaで外部キーをuniqueにしているとき、prisma migrateしても変更を検知しない（手動でマイグレーションファイルを作る方法）]]
 
 [[playwrightをDockerで動かすには？]]

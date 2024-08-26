@@ -1,6 +1,7 @@
 ---
 tags:
   - TailwindCSS
+  - MOC
 ---
 
 [[違いが紛らわしいTailwindCSSクラスセット]]

@@ -16,6 +16,8 @@ tags:
 [[prismaで既存のレコードを全て削除したい]]
 [[prismaのcreateManyを使ってネストしたクエリを作れるか？]]
 
+[[typescriptでの??とIIの使い分け]]
+
 [[Promiseの外からリゾルバを呼ぶ]]
 
 [[TypeScriptエラーハンドリング]]
