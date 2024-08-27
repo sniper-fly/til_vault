@@ -4,6 +4,8 @@ tags:
   - playwright
 title:
 ---
+[[Playwrightでブラウザが特定のAPIからのレスポンスが返ってくるまでドンピシャで待つ]]
+
 [[playwrightでリクエスト毎にきちんとプロキシが変化しているかの調査結果]]
 
 [[playwrightでrouteを使って不要なjsフェッチをしないようにして通信量を削減する]]
