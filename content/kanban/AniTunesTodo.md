@@ -6,19 +6,21 @@ kanban-plugin: board
 
 ## Planning
 
-- [ ] timeoutした際に数秒時間をおいて3回までリトライする
 - [ ] APに追加された曲をAnimeテーブルに自動ヒモ付
 - [ ] AnimeThemeAPIのupdateを自動更新して反映させる
 
 
 ## In Progress
 
-- [ ] scroll, waitforskeltonのtimeoutの決め打ちをやめてresultの数に比例するようにする
-- [ ] 大量検索結果に対応するため、スクロール即データインプットを実現する
+- [ ] saveAPsongもSpotifyAPIのrate limitがあるのでリトライ機構を仕込む
 
 
 ## Complete
 
+- [ ] myanimelistのタイトルを使ってAPを検索
+- [ ] timeoutした際に数秒時間をおいて3回までリトライする
+- [ ] MALのデータ収集
+	MALテーブルを作成
 - [ ] アニメ名 ＋ 曲名 検索ではなくアニメ名検索にしてリクエスト数を減らす
 - [ ] saveSpotifyTrackなどの作り直し：APSongデータとの関連付け
 	createAPSong関数の作成
@@ -44,6 +46,8 @@ kanban-plugin: board
 
 ## archive
 
+- [ ] 大量検索結果に対応するため、スクロール即データインプットを実現する
+- [ ] scroll, waitforskeltonのtimeoutの決め打ちをやめてresultの数に比例するようにする
 - [ ] anime has many SpotifyTrackのみに限定して、animeThemeとSpotifyTrackの関連はwhereでの一致検索とする
 - [ ] lambda nginx forward proxy
 - [ ] SpotifyTrackのname index追加

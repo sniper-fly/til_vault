@@ -7,6 +7,7 @@ kanban-plugin: board
 ## Planning
 
 - [ ] prismaで外部キーかつuniqueキーにしていたカラムからunique制約を取り除いてもマイグレーションが変更を検知しない件
+- [ ] finally文の具体的な使いみち
 - [ ] AWS IAMユーザー作成と.envの自動作成まで
 - [ ] obsidian をubuntuでクイックランチャーからすぐに使えるようにする方法
 - [ ] AWSハンズオンをTerraform でやってみた

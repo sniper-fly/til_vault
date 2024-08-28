@@ -6,6 +6,63 @@ tags:
 
 
 ===================================================
+[[2024-08-28]]
+
+そもそもalternative_titleは本当にja, en だけ？
+他の言語のはいらないのでこれで十分
+
+長過ぎるタイトルに関する調査スクリプトを供養
+```ts
+async function surveyTooLongTitle(anime: MalResponse["data"][number]) {
+  if (anime.node.title.length >= 191) {
+    console.log("title: ", anime.node.title);
+  }
+  const altTitles = anime.node.alternative_titles;
+  if (altTitles) {
+    for (const title of altTitles.synonyms || []) {
+      if (title.length >= 191) {
+        console.log("id:", anime.node.id, "synonym title: ", title);
+      }
+    }
+    if (altTitles.en && altTitles.en.length >= 191) {
+      console.log("id:", anime.node.id, "en title: ", altTitles.en);
+    }
+    if (altTitles.ja && altTitles.ja.length >= 191) {
+      console.log("id:", anime.node.id, "ja title: ", altTitles.ja);
+    }
+  }
+}
+
+async function surveyNotExistTitle(anime: MalResponse["data"][number]) {
+  const altTitles = anime.node.alternative_titles;
+  if (altTitles) {
+    for (const title of altTitles.synonyms || []) {
+      const a = await prisma.alternativeTitle.findFirst({
+        where: { title },
+      });
+      if (!a) {
+        console.log("not exist: ", title, anime.node.id);
+      }
+    }
+    if (altTitles.en && altTitles.en.length >= 191) {
+      const a = await prisma.alternativeTitle.findFirst({
+        where: { title: altTitles.en },
+      });
+      if (!a) {
+        console.log("not exist: ", altTitles.en, anime.node.id);
+      }
+    }
+    if (altTitles.ja && altTitles.ja.length >= 191) {
+      const a = await prisma.alternativeTitle.findFirst({
+        where: { title: altTitles.ja },
+      });
+      if (!a) {
+        console.log("not exist: ", altTitles.ja, anime.node.id);
+      }
+    }
+  }
+}
+```
 
 ===================================================
 [[2024-08-27]]
