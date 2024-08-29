@@ -17,6 +17,10 @@ tags:
 [[prismaで既存のレコードを全て削除したい]]
 [[prismaのcreateManyを使ってネストしたクエリを作れるか？]]
 
+[[winston logger ことはじめ]]
+
+[[typescriptでgotoを使いたい（ラベルでの代替）]]
+
 [[typescript, finally文の具体的な使いどころ（エラー時のリトライ処理）]]
 
 [[オブジェクトの型にメンバーを追加したり、別のオブジェクトを結合する方法]]

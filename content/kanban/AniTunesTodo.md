@@ -12,11 +12,18 @@ kanban-plugin: board
 
 ## In Progress
 
-- [ ] saveAPsongもSpotifyAPIのrate limitがあるのでリトライ機構を仕込む
+- [ ] waitForInfiniteScrollの無限ロック対策
+- [ ] 他のAPSongと紐付いていた場合にAPSongとAnimeのヒモ付が更新されない
 
 
 ## Complete
 
+- [ ] 格納可能文字列サイズの調整
+- [ ] savetrack失敗時のログが出ない問題
+- [ ] 無限スクロールの検知精度改善
+- [ ] typescriptのlogger導入
+	winstonでファイル出力
+- [ ] saveAPsongもSpotifyAPIのrate limitがあるのでリトライ機構を仕込む
 - [ ] myanimelistのタイトルを使ってAPを検索
 - [ ] timeoutした際に数秒時間をおいて3回までリトライする
 - [ ] MALのデータ収集

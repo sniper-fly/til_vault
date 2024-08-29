@@ -29,6 +29,7 @@ kanban-plugin: board
 - [ ] 雨検知システム
 - [ ] Taskchute watchOSアプリ
 - [ ] 正規表現ドリル投稿サイト
+- [ ] アニメ季節別トレイラーまとめサイト
 
 
 ## In Progress
