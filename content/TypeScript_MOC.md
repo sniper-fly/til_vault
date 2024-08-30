@@ -4,6 +4,7 @@ tags:
   - MOC
 ---
 ## prisma
+[[prismaでupdateする際のconnectの挙動について]]
 [[外部キーの参照先を用意せずにテーブルを作成しようとした時のエラー(Cannot add or update a child row a foreign key constraint fails)]]
 [[prismaで外部キーをuniqueにしているとき、prisma migrateしても変更を検知しない（手動でマイグレーションファイルを作る方法）]]
 [[Prismaで複合主キーを設定する]]
@@ -16,6 +17,8 @@ tags:
 [[schema.prismaのリレーション名変更はDBを変更せずに可能]]
 [[prismaで既存のレコードを全て削除したい]]
 [[prismaのcreateManyを使ってネストしたクエリを作れるか？]]
+
+[[Promise.raceで浮いたPromiseはどうなる？]]
 
 [[winston logger ことはじめ]]
 

@@ -5,6 +5,46 @@ tags:
 [[AniTunesTodo]]
 
 ===================================================
+[[2024-08-30]]
+
+AppleURLが空
+SpotifyURLがある && SpotifyTrackがある スキップ
+SpotifyURLが空 && AppleUrlが存在する →スキップ
+spotifyurlが空 && 存在しない はどちらでもない（applemusicを見るまで確定しない）
+urlがある && 存在しない はスキップしない
+urlがある && 存在する はスキップ
+
+```ts
+    const spotifyUri = extractSpotifyUri(song.spotifyUri);
+    const spotifyTrackExist =
+      spotifyUri &&
+      song.type === "track" &&
+      (await prisma.spotifyTrack.findUnique({
+        where: { id: spotifyUri },
+      }));
+    const spotifyAlbumExist =
+      spotifyUri &&
+      song.type === "album" &&
+      (await prisma.spotifyAlbum.findUnique({
+        where: { id: spotifyUri },
+      }));
+
+    const appleMusicUrl = extractAppleMusicUri(song.appleMusicUrl);
+    const appleMusicExist =
+      appleMusicUrl &&
+      (await prisma.appleMusicUrl.findFirst({
+        where: { url: appleMusicUrl },
+      }));
+
+    if (spotifyTrackExist) console.log("spotifyTrackExist");
+    if (appleMusicExist) console.log("appleMusicExist");
+
+    if (!(spotifyTrackExist || spotifyAlbumExist) || !appleMusicExist) {
+      newSongs.push(song);
+    }
+```
+
+===================================================
 [[2024-08-29]]
 MALは無理でもAniListならupdatedAt順に情報が取得できる
 AniListからMALのidを取得できれば、実質的にタイトルの自動更新が出来る

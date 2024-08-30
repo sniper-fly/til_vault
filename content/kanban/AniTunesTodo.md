@@ -12,12 +12,16 @@ kanban-plugin: board
 
 ## In Progress
 
-- [ ] waitForInfiniteScrollの無限ロック対策
-- [ ] 他のAPSongと紐付いていた場合にAPSongとAnimeのヒモ付が更新されない
+- [ ] ERR_TUNNEL_CONNECTION_FAILED時に接続IPをロギング
+- [ ] saveAPsongからspotifyfetch関連を分離する
+- [ ] まずDBに検索をかけて既に存在する楽曲情報に関して不要なfetchをしないようにする
+- [ ] AIkaでheadless falseにしてリトライ処理が上手く動いているか調査
 
 
 ## Complete
 
+- [ ] 他のAPSongと紐付いていた場合にAPSongとAnimeのヒモ付が更新されない
+- [ ] waitForInfiniteScrollの無限ロック対策
 - [ ] 格納可能文字列サイズの調整
 - [ ] savetrack失敗時のログが出ない問題
 - [ ] 無限スクロールの検知精度改善
