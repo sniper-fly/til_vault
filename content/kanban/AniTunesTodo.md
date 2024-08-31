@@ -6,16 +6,16 @@ kanban-plugin: board
 
 ## Planning
 
+- [ ] AIkaでheadless falseにしてリトライ処理が上手く動いているか調査
+- [ ] ERR_TUNNEL_CONNECTION_FAILED時に接続IPをロギング
 - [ ] APに追加された曲をAnimeテーブルに自動ヒモ付
 - [ ] AnimeThemeAPIのupdateを自動更新して反映させる
 
 
 ## In Progress
 
-- [ ] ERR_TUNNEL_CONNECTION_FAILED時に接続IPをロギング
 - [ ] saveAPsongからspotifyfetch関連を分離する
 - [ ] まずDBに検索をかけて既に存在する楽曲情報に関して不要なfetchをしないようにする
-- [ ] AIkaでheadless falseにしてリトライ処理が上手く動いているか調査
 
 
 ## Complete
@@ -57,6 +57,7 @@ kanban-plugin: board
 
 ## archive
 
+- [ ] saveAPsongの戻り値にAPsongを指定して、selectNew関数に渡すことができるようにして同期関数化する
 - [ ] 大量検索結果に対応するため、スクロール即データインプットを実現する
 - [ ] scroll, waitforskeltonのtimeoutの決め打ちをやめてresultの数に比例するようにする
 - [ ] anime has many SpotifyTrackのみに限定して、animeThemeとSpotifyTrackの関連はwhereでの一致検索とする
