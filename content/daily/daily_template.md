@@ -2,22 +2,19 @@
 tags:
   - daily
 ---
+## leetcode
+## type-challenge
 
-### AOJ
+## Zenn執筆
 
-### leetcode
-### type-challenge
+## 個人開発
 
-### Zenn執筆
+## ISUCON
 
-### 個人開発
+## Terraform / AWS
 
-### Terraform / AWS
+## Frontend Mentor
 
-### Frontend Mentor
+## React Testing
 
-### React Testing
-
-### Obsidian研究
-
-### その他
+## その他
