@@ -16,6 +16,7 @@ kanban-plugin: board
 
 ## Complete
 
+- [ ] 失敗時にenvを編集するのではなくスクレイピング成功時にidxを記録する
 - [ ] ERR_TUNNEL_CONNECTION_FAILED時に接続IPをロギング
 - [ ] AIkaでheadless falseにしてリトライ処理が上手く動いているか調査
 - [ ] まずDBに検索をかけて既に存在する楽曲情報に関して不要なfetchをしないようにする

@@ -6,6 +6,8 @@ tags:
 # 技術
 
 ## インフラ
+[[ISUCON_MOC]]
+
 [[Cloud_MOC]]
 AWS, Docker
 
