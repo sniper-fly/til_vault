@@ -5,6 +5,24 @@ tags:
 [[AniTunesTodo]]
 
 ===================================================
+[[2024-09-02]]
+
+album:track = 7:32 ~= 1:4
+limit 7000
+total 21860
+track 16000
+320回
+album 5000
+250回
+
+残りアニメ 4000
+そもそもAPsongのjsonさえ取得できれば、spotifyのAPIを呼び出すのはその後でも良い
+スクレイピング時はAPsongの作成のみを行い、取得したjsonを保存してあとでまとめて分別してSpotifyのTrack, Album, AppleMusicUrlのデータ作成を行う
+
+SongsInfoCombinedにjsonのsetを集め、forループ終了毎にファイルに書き込む
+その際に `export combined = ` を足すことで、parse再開時にそのままtsファイルとしてimport出来るようにする
+
+===================================================
 [[2024-09-01]]
 
 `api.track.get(strings[])` を使うのは面倒なので諦める

@@ -98,10 +98,12 @@ tags:
 
 ## In Progress
 
+- [ ] [FM]他のひとのコードと比較
 
 
 ## Complete
 
+- [ ] [FM]README整備&publish
 - [ ] AniPlaylistをスクレイピング
 - [ ] OUJ履修登録
 - [ ] ECRのコンテナを使うようにDockerfileを修正

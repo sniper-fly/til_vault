@@ -15,9 +15,9 @@ AWS, Docker
 
 ## ウェブ
 [[TypeScript_MOC]]
-
+Typescript全般
+[[Prisma_MOC]]
 [[Playwright_MOC]]
-playwright, vitest, react testing library など
 
 [[React_MOC]]
 
@@ -31,7 +31,7 @@ FrontendMentorでよく使ったテクニック、奮闘記
 ## その他
 [[個人開発_MOC]]
 
-[[Zennメモ書き]]
+[[Zenn_MOC]]
 
 [[Other_languages_MOC]]
 python, C++, etc.

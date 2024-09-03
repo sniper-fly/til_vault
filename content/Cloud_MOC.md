@@ -8,12 +8,12 @@ tags:
 ---
 AWS, Terraform などのクラウド関連技術の話
 
+[[Terraformで特定リソースのリージョンを変更したい]]
 
 [[ECRの作成からdocker_pushまで一貫してterraformで行えるようにする]]
 
 [[Lambdaの利用料金,60億GB秒月,について]]
 
-[[terraformでECRを作ってイメージをpushする]]
 [[terraformで構築したnextサーバーがlabdaWebAdapterで動かない件]]
 
 [[assume role とは何なのか？]]

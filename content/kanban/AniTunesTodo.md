@@ -16,6 +16,8 @@ kanban-plugin: board
 
 ## Complete
 
+- [ ] SongsInfoCombinedにjsonのsetを集め、forループ終了毎にファイルに書き込む
+	その際に `export combined = `
 - [ ] 失敗時にenvを編集するのではなくスクレイピング成功時にidxを記録する
 - [ ] ERR_TUNNEL_CONNECTION_FAILED時に接続IPをロギング
 - [ ] AIkaでheadless falseにしてリトライ処理が上手く動いているか調査

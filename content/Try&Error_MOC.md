@@ -3,8 +3,6 @@ tags:
   - MOC
   - tryAndError
 ---
-[[Promise.raceで浮いたPromiseはどうなる？]]
-
 [[正規表現で括弧を使って単語を指定しつつ、マッチ結果に含まれないようにしたい（非キャプチャリンググループ）]]
 
 [[ubuntuのターミナル上でクリップボードにコピー(xsel command)]]
