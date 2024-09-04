@@ -21,14 +21,15 @@ Typescript全般
 
 [[React_MOC]]
 
-[[TailwindCSS_MOC]]
+[[HTML_CSS_MOC]]
+TaliwindCSSの情報など
 FrontendMentorでよく使ったテクニック、奮闘記
-
-[[Tutorials_MOC]]
 
 [[SQL_MOC]]
 
 ## その他
+[[Tutorials_MOC]]
+
 [[個人開発_MOC]]
 
 [[Zenn_MOC]]

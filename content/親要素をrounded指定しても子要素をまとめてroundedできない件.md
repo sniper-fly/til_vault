@@ -30,3 +30,6 @@ Nextjs の Image はブロック要素？インライン？
 ```
 
 A. `rounded-l-xl` `rounded-r-xl` などを使うことで左右のどちらかにのみ丸みをつけたりできる
+[Product Preview Card Component](https://edpau.github.io/fm_product_preview_card_component/)
+overflow-hiddenを使うことで、親要素からはみ出した子要素を一部分を非表示に出来る
+これによって、子要素に個別にroundedを指定しなくて済む

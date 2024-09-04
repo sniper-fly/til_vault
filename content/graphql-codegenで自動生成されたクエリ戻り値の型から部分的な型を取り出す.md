@@ -55,7 +55,7 @@ type Media = {
 ```
 
 ## 結論
-自作のユーティリティ型を使う
+自作のユーティリティ型を使うことで解決
 ```ts
 type extractTypeName<T, __typename> = T extends
   | {
@@ -141,6 +141,30 @@ export type User_Anime_ListQuery = {
 要素一つ一つについて処理を行う関数を作りたい場合、上記`User_Anime_ListQuery`から
 `__typename?: "Media";`を持つオブジェクトの型を部分的に取り出したくなるということがあります。
 
-### 解決策1
+愚直に取り出したい型をコピペして利用しても良いですが、例えばGraphQLのクエリを変更した場合は自動生成される型も変更されるため、コピペが多ければ多いほど保守が大変になります。
+
+また、`User_Anime_ListQuery["MediaListCollection"]["lists"]` のようにすることで部分的な型を取り出すことも今回に関しては出来ません。オブジェクトがundefinedやnullを取りうる可能性があるためです。
+
+そこで下記のユーティリティ型を定義します。
+```ts
+type extractTypeName<T, __typename> = T extends
+  | {
+      [key in string]?: infer U;
+    }
+  | Array<infer U>
+  ? U extends { __typename?: __typename }
+    ? U
+    : extractTypeName<U, __typename>
+  : never;
+```
 
 ### 原理
+前半部分は`infer`を利用してプロパティ、もしくは配列の型の取り出しを行っています　。
+```ts
+type extractTypeName<T, __typename> = T extends
+  | {
+      [key in string]?: infer U;
+    }
+  | Array<infer U>
+```
+実はTypeScriptのGeneric Typesでは再帰を使うことが出来ます。

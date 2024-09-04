@@ -2,7 +2,10 @@
 tags:
   - TailwindCSS
   - MOC
+  - HTML
+  - CSS
 ---
+[[picture html tagで条件によって表示する画像を変更する]]
 
 [[違いが紛らわしいTailwindCSSクラスセット]]
 
