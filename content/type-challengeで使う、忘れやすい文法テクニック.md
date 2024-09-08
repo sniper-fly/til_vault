@@ -5,7 +5,11 @@ tags:
 ---
 typescriptの細かい文法
 
-`PromiseLike`
+## 複数の要素を持つ配列型に対して、`T[number]`のような型を書くとどうなる？
+→union typeになる
+[10 - Tuple to Union · Issue #7 · type-challenges/type-challe...](https://github.com/type-challenges/type-challenges/issues/7)
+
+## `PromiseLike`
 thenキーを持つようなオブジェクトもPromiseLikeの部分型として判定される
 
 [ユニオン分配 (union distribution) | TypeScript入門『サバイバルTypeScript』](https://typescriptbook.jp/reference/type-reuse/union-distribution)
@@ -20,7 +24,7 @@ type C = NotDistribute<string | number>; // false `string | number`型は`string
 ```
 
 https://www.typescriptlang.org/docs/handbook/2/mapped-types.html
-mapped Type
+## mapped Type
 as を使ったRemapping, neverでの除去、PropertyType以外のオブジェクトでのmaping
 -, + 演算子でreadonlyや ?: のフラグを消すことが出来る
 
@@ -33,7 +37,7 @@ type TupleToObject<T extends readonly (PropertyKey)[]> =
 https://github.com/type-challenges/type-challenges/blob/main/questions/00011-easy-tuple-to-object/README.ja.md
 
 
-keyof any は全てのオブジェクトが取りうるkeyの型のunionを表してくれる
+## keyof any は全てのオブジェクトが取りうるkeyの型のunionを表してくれる
 ```
 keyof any == (string | number | symbol)
 ```

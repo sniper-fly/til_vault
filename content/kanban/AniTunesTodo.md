@@ -12,6 +12,8 @@ kanban-plugin: board
 
 ## In Progress
 
+- [ ] spotifyDataのbulkInsert
+- [ ] `__countrycodetoSpotifyTrack`のデータ消費が多すぎるので、ビット列で表現して削減する
 
 
 ## Complete

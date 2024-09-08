@@ -6,7 +6,7 @@ tags:
 ## 要するに...
 こういう型から
 ```ts
-export type User_Anime_ListQuery = {
+type User_Anime_ListQuery = {
   __typename?: "Query";
   MediaListCollection?: {
     __typename?: "MediaListCollection";
@@ -67,7 +67,7 @@ type extractTypeName<T, __typename> = T extends
     : extractTypeName<U, __typename>
   : never;
 
-export type Media = extractTypeName<User_Anime_ListQuery, "Media">;
+type Media = extractTypeName<User_Anime_ListQuery, "Media">;
 ```
 
 ## 解説
@@ -159,12 +159,31 @@ type extractTypeName<T, __typename> = T extends
 ```
 
 ### 原理
-前半部分は`infer`を利用してプロパティ、もしくは配列の型の取り出しを行っています　。
+例えば、`__typename: "Media"` を持つオブジェクトの型を取り出すとします。
+実はTypeScriptのGeneric Typesでは再帰を使うことが出来ます。
+そこで、`infer`を使って部分型を取り出して、再帰的にネストされた型を探索し、
+`__typename: "Media"` を持つ部分的な型を見つけたら、それを返すようにすれば取り出すことができます。
+
+具体的に分解しながら見ていくと、
+まずは`infer`を利用してプロパティ、もしくは配列の型の取り出しを行っています。
 ```ts
 type extractTypeName<T, __typename> = T extends
   | {
       [key in string]?: infer U;
     }
   | Array<infer U>
+  ? U
+  : never
 ```
-実はTypeScriptのGeneric Typesでは再帰を使うことが出来ます。
+`User_Anime_ListQuery`はよく見ると深くネストされた構造の中の一部分はオブジェクトもしくは配列で出来ていることが分かります。
+そこで、`T`はこのどちらかに当てはまると考えられるので、`infer`を用いて配列の値、もしくはオブジェクトの値部分を取り出しています。
+
+例えば、下記のような型に対して現段階の`extractTypeName`を利用すると
+```ts
+type User_Anime_ListQuery = {
+  __typename?: "Query";
+  MediaListCollection?: {
+	...
+  } | null;
+};
+```
