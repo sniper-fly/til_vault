@@ -167,7 +167,7 @@ type extractTypeName<T, __typename> = T extends
 具体的に分解しながら見ていくと、
 まずは`infer`を利用してプロパティ、もしくは配列の型の取り出しを行っています。
 ```ts
-type extractTypeName<T, __typename> = T extends
+type extractTypeName1<T> = T extends
   | {
       [key in string]?: infer U;
     }
@@ -178,12 +178,61 @@ type extractTypeName<T, __typename> = T extends
 `User_Anime_ListQuery`はよく見ると深くネストされた構造の中の一部分はオブジェクトもしくは配列で出来ていることが分かります。
 そこで、`T`はこのどちらかに当てはまると考えられるので、`infer`を用いて配列の値、もしくはオブジェクトの値部分を取り出しています。
 
-例えば、下記のような型に対して現段階の`extractTypeName`を利用すると
+例えば、下記のような型に対して現段階の`extractTypeName1`を利用すると
 ```ts
 type User_Anime_ListQuery = {
   __typename?: "Query";
   MediaListCollection?: {
-	...
+	__typename?: "MediaListCollection";
+	lists?: Array...
+		...省略
   } | null;
 };
+
+type test1 = extractTypeName1<User_Anime_ListQuery>
+// 下記のようなunion型が取り出せる
+type part1 = "Query" | {
+    __typename?: "MediaListCollection";
+    lists?: Array...
+		...省略
+} | null
 ```
+一段階ネストが下がった形のunion型が取得できます。
+
+ところで、下記のようなunion型に対して`extractTypeName1`を適用するとどうなるでしょうか？
+```ts
+type hoge = extractTypeName1<"hoge" | { a: string } | null>
+type hoge = string // これと同義になる
+```
+上記のように`string`のみが取り出されます。
+オブジェクトや配列のサブタイプではない`"hoge"`や`null`は`never`を返すため、unionから取り除かれます。
+
+そこで`test1`型に対して、再度`extractTypeName1`を適用すると、
+```ts
+type test2 = extractTypeName1<test1>
+// 下記のような型が取り出せる
+type part2 =  "MediaListCollection" | ({
+    __typename?: "MediaListGroup";
+    entries?: Array<{
+		...省略
+    } | null> | null;
+} | null)[] | null
+```
+段々とネストが下がっていく様子がわかると思います。
+`"Query"`や`null`などの型は`T extends | { [key in string]?: infer U; } | Array<infer U>`の条件判定で`never`となりunionから取り除かれるため、このように都合よくオブジェクトか配列型のみを探索することが可能になります。
+
+次は、Generic typeの再帰呼び出しと終了条件を実装します。
+```ts
+type extractTypeName<T, __typename> = T extends
+  | {
+      [key in string]?: infer U;
+    }
+  | Array<infer U>
+  ? U extends { __typename?: __typename }
+    ? U
+    : extractTypeName<U, __typename>
+  : never;
+```
+新たに`__typename`引数が増えています。
+目的のプロパティが見つからない場合は再度 `extractTypeName`を呼び出し、`U`を引数に指定することで再帰探索しています。
+先程`infer`で取り出した型`U`が`{ __typename?: "Media" }` などのプロパティを持つ型であれば再帰探索を終了して良いので、そのまま`U`を返しています。
