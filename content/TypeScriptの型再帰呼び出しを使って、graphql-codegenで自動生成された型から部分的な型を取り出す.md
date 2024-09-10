@@ -159,10 +159,12 @@ type extractTypeName<T, __typename> = T extends
 ```
 
 ### 原理
+実はTypeScript 3.7以降では再帰呼び出しを使うことが出来ます。
+[Announcing TypeScript 3.7 - TypeScript](https://devblogs.microsoft.com/typescript/announcing-typescript-3-7/#(more)-recursive-type-aliases5)
+
 例えば、`__typename: "Media"` を持つオブジェクトの型を取り出すとします。
-実はTypeScriptのGeneric Typesでは再帰を使うことが出来ます。
-そこで、`infer`を使って部分型を取り出して、再帰的にネストされた型を探索し、
-`__typename: "Media"` を持つ部分的な型を見つけたら、それを返すようにすれば取り出すことができます。
+`infer`を使って部分的な型を取り出して再帰的にネストされた型を探索し、
+`__typename: "Media"` を持つ部分的な型を見つけたらそれを最後に返す、というような実装が`extractTypeName`の考え方になります。
 
 具体的に分解しながら見ていくと、
 まずは`infer`を利用してプロパティ、もしくは配列の型の取り出しを行っています。
@@ -176,7 +178,7 @@ type extractTypeName1<T> = T extends
   : never
 ```
 `User_Anime_ListQuery`はよく見ると深くネストされた構造の中の一部分はオブジェクトもしくは配列で出来ていることが分かります。
-そこで、`T`はこのどちらかに当てはまると考えられるので、`infer`を用いて配列の値、もしくはオブジェクトの値部分を取り出しています。
+そこで、`infer`を用いて配列の値、もしくはオブジェクトの値部分を取り出しています。
 
 例えば、下記のような型に対して現段階の`extractTypeName1`を利用すると
 ```ts

@@ -18,11 +18,11 @@ kanban-plugin: board
 
 ## In Progress
 
-- [ ] ts の genericsで再帰が使える件について
 
 
 ## Complete
 
+- [ ] ts の genericsで再帰が使える件について
 
 
 ## archive
