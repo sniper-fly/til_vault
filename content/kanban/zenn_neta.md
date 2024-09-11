@@ -6,18 +6,18 @@ kanban-plugin: board
 
 ## Planning
 
-- [ ] prismaで外部キーかつuniqueキーにしていたカラムからunique制約を取り除いてもマイグレーションが変更を検知しない件
 - [ ] finally文の具体的な使いみち
-- [ ] AWS IAMユーザー作成と.envの自動作成まで
+- [ ] prismaで外部キーかつuniqueキーにしていたカラムからunique制約を取り除いてもマイグレーションが変更を検知しない件
 - [ ] obsidian をubuntuでクイックランチャーからすぐに使えるようにする方法
-- [ ] AWSハンズオンをTerraform でやってみた
+- [ ] Playwrightで複数の子要素に対して操作を行う方法
+- [ ] AWS IAMユーザー作成と.envの自動作成まで
 - [ ] how to use spotify SDK
 - [ ] comment tagged templates 拡張機能が動作しない件(競合)
-- [ ] Playwrightで複数の子要素に対して操作を行う方法
 
 
 ## In Progress
 
+- [ ] AWSハンズオンをTerraform でやってみた
 
 
 ## Complete

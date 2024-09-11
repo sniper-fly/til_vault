@@ -6,18 +6,20 @@ kanban-plugin: board
 
 ## Planning
 
+- [ ] `__countrycodetoSpotifyTrack`のデータ消費が多すぎるので、ビット列で表現して削減する
 - [ ] APに追加された曲をAnimeテーブルに自動ヒモ付
 - [ ] AnimeThemeAPIのupdateを自動更新して反映させる
 
 
 ## In Progress
 
-- [ ] spotifyDataのbulkInsert
-- [ ] `__countrycodetoSpotifyTrack`のデータ消費が多すぎるので、ビット列で表現して削減する
+- [ ] applemusicurlsのbulkinsert
 
 
 ## Complete
 
+- [ ] spotifyAlbumsのbulkInsert
+- [ ] spotifyTracksのbulkInsert
 - [ ] SongsInfoCombinedにjsonのsetを集め、forループ終了毎にファイルに書き込む
 	その際に `export combined = `
 - [ ] 失敗時にenvを編集するのではなくスクレイピング成功時にidxを記録する
