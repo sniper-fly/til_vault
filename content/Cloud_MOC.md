@@ -8,6 +8,8 @@ tags:
 ---
 AWS, Terraform などのクラウド関連技術の話
 
+[[AWSハンズオンをTerraformで再現する]]
+
 [[Terraformで特定リソースのリージョンを変更したい]]
 
 [[ECRの作成からdocker_pushまで一貫してterraformで行えるようにする]]

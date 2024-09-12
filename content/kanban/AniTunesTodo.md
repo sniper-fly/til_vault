@@ -6,18 +6,21 @@ kanban-plugin: board
 
 ## Planning
 
-- [ ] `__countrycodetoSpotifyTrack`のデータ消費が多すぎるので、ビット列で表現して削減する
-- [ ] APに追加された曲をAnimeテーブルに自動ヒモ付
 - [ ] AnimeThemeAPIのupdateを自動更新して反映させる
+- [ ] `__countrycodetoSpotifyTrack`のデータ消費が多すぎるので、ビット列で表現して削減する
+- [ ] TiDB serverlessにデプロイ
+- [ ] AP毎日スクレイピング機能をlambdaに載せる
+- [ ] ひとつのアニメあたり大量のAPsongが一致してしまっているため、検索条件を工夫して特定を行う
 
 
 ## In Progress
 
-- [ ] applemusicurlsのbulkinsert
+- [ ] APに追加された曲をAnimeテーブルに自動ヒモ付(ローカル)
 
 
 ## Complete
 
+- [ ] applemusicurlsのbulkinsert
 - [ ] spotifyAlbumsのbulkInsert
 - [ ] spotifyTracksのbulkInsert
 - [ ] SongsInfoCombinedにjsonのsetを集め、forループ終了毎にファイルに書き込む

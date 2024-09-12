@@ -4,9 +4,44 @@ tags:
 ---
 
 =========================
-[[2024-09-06]]
+[[2024-09-12]]
 
-`mysqldumpslow`コマンドでスロークエリの集計ログを見れる
+curlのOオプションとは
+```
+-O, --remote-name
+Write output to a local file named like the remote file we get. (Only the file part of the remote file is used, the path is cut off.)
+```
+
+isuconのvmにsudoコマンドにパスワードは必要ない
+sudo su とすることでrootにログイン可能
+
+alpコマンドのインストール
+```
+> curl -O https://github.com/tkuchiki/alp/releases/download/v1.0.21/alp_linux_amd64.tar.gz
+> tar -xzf alp_linux_amd64.tar.gz
+> mv alp /usr/bin
+```
+
+議題
+- vscodeでいい感じにsshして複数ファイルの管理が出来ると良い
+root権限でvscode sshできる？
+- git管理どうする？
+=========================
+[[2024-09-11]]
+
+[Install Vagrant | Vagrant | HashiCorp Developer](https://developer.hashicorp.com/vagrant/docs/installation)
+
+[GitHub - catatsuy/private-isu: a web application performance...](https://github.com/catatsuy/private-isu)
+これによると
+
+> 手元にansibleをインストールして`vagrant up`すればprovisioningが実行される。
+
+ansibleとは何か？
+vagrantといい感じに統合された設定管理ツール。らしい。
+[Installing Ansible on specific operating systems — Ansible C...](https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html#id6)
+
+=========================
+[[2024-09-06]]
 
 ログのローテートをする意味?
 →チューニング前後のログが混ざってしまい、結果の比較ができなくなる
@@ -44,12 +79,4 @@ usr sys とかの読み方がわからない
 =========================
 [[2024-09-05]]
 
-nginxのコンテナ内でnginxのconfigのsyntaxチェックを行う方法
-`nginx -t`
-
 mysql logのファイルの閲覧権限がおかしいので、my.cnfで744に出来るかどうか
-
-nginx の再起動方法
-```
-nginx -s reopen
-```

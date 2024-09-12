@@ -5,8 +5,9 @@ tags:
 ---
 
 ## type-challenge 関連
+[[Typescriptのdeclareとは？（アンビエント宣言）]]
 [[関数はmapped typeではただの配列型になる]]
-[[`keyof T extends never` が意味するところ]]
+[[keyof T extends never が意味するところ]]
 [[可変長引数の配列型をinferで取得する方法]]
 [[type-challengeで使う、忘れやすい文法テクニック]]
 keyof, in, PropertyTypeなど
