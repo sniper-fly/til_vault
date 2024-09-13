@@ -50,4 +50,7 @@ Open University Japan, 放送大学関連
 [[kanban_MOC]]
 タスク管理
 
+[[idea_MOC]]
+
 [[Obsidian_MOC]]
+

@@ -6,6 +6,7 @@ kanban-plugin: board
 
 ## Planning
 
+- [ ] AWSハンズオンをTerraform でやってみた
 - [ ] finally文の具体的な使いみち
 - [ ] prismaで外部キーかつuniqueキーにしていたカラムからunique制約を取り除いてもマイグレーションが変更を検知しない件
 - [ ] obsidian をubuntuでクイックランチャーからすぐに使えるようにする方法
@@ -17,7 +18,6 @@ kanban-plugin: board
 
 ## In Progress
 
-- [ ] AWSハンズオンをTerraform でやってみた
 
 
 ## Complete

@@ -8,16 +8,9 @@ show create table コマンドとは？
 create tableをする際に必要なコマンドを表示することで、
 テーブルの情報を知ることが出来る
 
-
 ## インデックス作成
 ```sql
 ALTER TABLE comments ADD INDEX post_id_idx(post_id);
-```
-
-
-## mysqlログファイルを削除したりなどファイルが更新されたことをMYSQLに伝える
-```bash
-mysqladmin flush-logs
 ```
 
 下記エラーが出る場合は

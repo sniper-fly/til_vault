@@ -3,6 +3,9 @@ tags:
   - AWS/lambda
   - lambda_web_adapter
 ---
+[Next.jsをLambda + API Gatewayでサーバーレス化する (standaloneモード) - may...](https://tmokmss.hatenablog.com/entry/20221213/1670891305)
+かなり詳しくlwaの使い方が紹介されている
+キャッシュが効かなくて画像表示がおかしくなる問題の解決策についても
 
 [Dockerを使わない、Remix / Next.js 14 など最新ウェブフレームワークのAWS完...](https://serverless.co.jp/blog/g30vzpio0ww/)
 zipでnext.js をデプロイ

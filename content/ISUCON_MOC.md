@@ -3,6 +3,8 @@ tags:
   - ISUCON
   - MOC
 ---
+[[k6とは？]]
+
 [[ISUCON外部リンクまとめ]]
 
 [[ISUCON便利コマンドまとめ]]
@@ -10,8 +12,6 @@ tags:
 [[private-isuでnginxが出すlogをjson形式にする]]
 
 [[isuconをVagrantで動かした際にホスト側からウェブブラウザにアクセスする方法]]
-
-[[vagrantを扱うための超基本3コマンド,up,destroy,ssh]]
 
 [[ISUCON本その他雑記]]
 
