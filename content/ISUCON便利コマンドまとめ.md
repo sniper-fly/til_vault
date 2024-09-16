@@ -2,6 +2,9 @@
 tags:
   - ISUCON
 ---
+k6をユーザー数1で、シナリオhoge.jsを実行する
+`k6 run --vus 1 hoge.js`
+
 vagrantでの仮想マシンの終了コマンド(`vagrant destroy`だと再度構築が必要になってしまう)
 `vagrant halt`
 
