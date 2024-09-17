@@ -5,6 +5,8 @@ tags:
 ---
 [[k6とは？]]
 
+[[private-isuをVagrantで動かすまでにやったこと]]
+
 [[ISUCON外部リンクまとめ]]
 
 [[ISUCON便利コマンドまとめ]]

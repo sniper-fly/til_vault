@@ -2,8 +2,11 @@
 tags:
   - daily
 ---
+
 ## leetcode
 ## type-challenge
+
+## Frontend Mentor
 
 ## Zenn執筆
 
@@ -12,8 +15,6 @@ tags:
 ## ISUCON
 
 ## Terraform / AWS
-
-## Frontend Mentor
 
 ## React Testing
 
