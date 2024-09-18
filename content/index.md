@@ -30,7 +30,7 @@ FrontendMentorでよく使ったテクニック、奮闘記
 ## その他
 [[Tutorials_MOC]]
 
-[[個人開発_MOC]]
+[[personal_project_MOC]]
 
 [[Zenn_MOC]]
 

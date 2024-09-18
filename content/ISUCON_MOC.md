@@ -3,6 +3,8 @@ tags:
   - ISUCON
   - MOC
 ---
+[[vagrantでprivate-isuのベンチマークインスタンスを動かす]]
+
 [[k6とは？]]
 
 [[private-isuをVagrantで動かすまでにやったこと]]

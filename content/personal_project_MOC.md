@@ -2,6 +2,7 @@
 tags:
   - 個人開発
   - MOC
+  - personalProject
 ---
 [[文字列の類似度を測る方法]]
 

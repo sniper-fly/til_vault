@@ -37,3 +37,21 @@ next.js側では`http://domain/_next` からファイルを転送しようとし
 正しくは`http://domain/prod/_next` にURLが送られなければならないのでは？
 
 lambda URLでのネットワークリクエストについても詳しく調査して、URLが適正に動いていればこの問題である可能性が高い
+
+[[2024-09-18]]
+lambda urlで動くことを確認
+やはりAPI Gatewayを利用する際はprod（ステージ名）がurlに含まれているため、nextjsが正しくストリーミングできない
+
+[aws-lambda-web-adapter/examples/nextjs-response-streaming/te...](https://github.com/awslabs/aws-lambda-web-adapter/blob/main/examples/nextjs-response-streaming/template.yaml)o
+こちらのresponse streamingのバージョンをよく見るとhttp apiではなくlambdaのfunction urlを使っている
+
+[AWS Lambda レスポンスストリーミングの紹介 | Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/introducing-aws-lambda-response-streaming/)
+nextjs のRSCなどはresponse streamingと呼ぶっぽい
+
+prod/hoge などを hoge としてlambdaに伝えるにはAPI Gatewayで何かpathの変換処理が必要かも知れない
+
+そもそも、lambda function urlだけでやるのは問題？API Gatewayを使うメリットは？
+[[lambda function urlがあるのに、依然としてAPI gatewayを使ってlambdaを呼び出す理由]]
+
+以下の環境変数を設定
+`AWS_LWA_INVOKE_MODE: response_stream`

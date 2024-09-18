@@ -8,6 +8,8 @@ tags:
 ---
 
 AWS, Terraform などのクラウド関連技術の話
+[[lambda function urlがあるのに、依然としてAPI gatewayを使ってlambdaを呼び出す理由]]
+
 [[Terraformで削除時に自動実行されるスクリプトを設定したい]]
 
 [[AWSハンズオンをTerraformで再現する]] 執筆途中

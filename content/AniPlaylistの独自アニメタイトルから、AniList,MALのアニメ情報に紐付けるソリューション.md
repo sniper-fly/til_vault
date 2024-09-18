@@ -2,7 +2,15 @@
 tags:
   - 個人開発
 ---
+[[2024-09-18]]
+APSongを1件ずつ走査
+紐づくAPAnimeTitleがN個あるとする。
+MyAnimeListのtitle, AlternativeTitleのtitleに対して完全一致するAPAnimeTitleが最も多いアニメを見つけられればAPSongとMAL、AniListとの関連を定義できそう
+これを探すSQLを定義して、例外を探す
+逆に、タイトル完全一致するアニメが見つからないAPSongを見つけ出す
+これによってさらにSQLを改善する
 
+===========================================
 AniPlaylistの独自アニメタイトルから、AniList,MALのアニメ情報に紐付けるソリューション
 
 結論：Braveを使ってウェブ検索で曖昧ワードを絞り込む
