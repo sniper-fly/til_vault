@@ -6,6 +6,8 @@ tags:
 行間の調整は`leading-x`
 文字間の調整は`tracking-x`
 
+flex, flex-rowの場合は横が主軸
+flex-colは縦が主軸
 `justify-center` は主軸に対して真ん中に寄せる
 `items-center` は交差軸に対して真ん中に寄せる
 

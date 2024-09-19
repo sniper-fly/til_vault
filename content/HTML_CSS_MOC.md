@@ -5,6 +5,8 @@ tags:
   - HTML
   - CSS
 ---
+[[tailwindcssでgrid template areaを使うには]]
+
 [[space-xxxとgapの違い]]
 
 [[picture html tagで条件によって表示する画像を変更する]]

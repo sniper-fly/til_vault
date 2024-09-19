@@ -2,6 +2,11 @@
 tags:
   - ISUCON
 ---
+
+
+Percona Toolkit でSQLの分析を行う
+`pt-query-digest /var/log/mysql/mysql-slow.log`
+
 k6をユーザー数1で、シナリオhoge.jsを実行する
 `k6 run --vus 1 hoge.js`
 

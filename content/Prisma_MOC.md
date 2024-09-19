@@ -3,6 +3,8 @@ tags:
   - MOC
   - typescript/prisma
 ---
+[[prismaでupdateの際にオブジェクトの代わりにundefinedを渡すと？]]
+
 [[Prismaで複合キーを定義した時にデフォルトでつけられるidentifierの名前は？]]
 
 [[prismaでupdateする際のconnectの挙動について]]

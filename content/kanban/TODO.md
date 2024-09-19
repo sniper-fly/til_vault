@@ -98,11 +98,12 @@ tags:
 
 ## In Progress
 
-- [ ] [FM]他のひとのコードと比較
+- [ ] 内定式に向けて自己紹介スライド
 
 
 ## Complete
 
+- [ ] [FM]他のひとのコードと比較
 - [ ] [FM]README整備&publish
 - [ ] AniPlaylistをスクレイピング
 - [ ] OUJ履修登録
