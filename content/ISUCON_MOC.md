@@ -3,6 +3,12 @@ tags:
   - ISUCON
   - MOC
 ---
+[[ISUCON本のインデックスまとめ]]
+- [[クラスターインデックスとは]]
+- [[covering indexとは？]]
+
+[[N+1を解消する方法4種]]
+
 [[vagrantでprivate-isuのベンチマークインスタンスを動かす]]
 
 [[k6とは？]]

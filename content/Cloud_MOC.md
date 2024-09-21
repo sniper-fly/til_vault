@@ -6,10 +6,7 @@ tags:
   - PaaS
   - Terraform
 ---
-
 AWS, Terraform などのクラウド関連技術の話
-[[lambda function urlがあるのに、依然としてAPI gatewayを使ってlambdaを呼び出す理由]]
-
 [[Terraformで削除時に自動実行されるスクリプトを設定したい]]
 
 [[AWSハンズオンをTerraformで再現する]] 執筆途中
@@ -18,12 +15,13 @@ AWS, Terraform などのクラウド関連技術の話
 
 [[ECRの作成からdocker_pushまで一貫してterraformで行えるようにする]]
 
-[[Lambdaの利用料金,60億GB秒月,について]]
-
-[[terraformで構築したnextサーバーがlabdaWebAdapterで動かない件]]
-
 [[assume role とは何なのか？]]
 
+### Lambda 関連
+[[LambdaWebAdapterとCloudFront併用におけるキャッシュ戦略]]
+[[lambda function urlがあるのに、依然としてAPI gatewayを使ってlambdaを呼び出す理由]]
+[[Lambdaの利用料金,60億GB秒月,について]]
+[[terraformで構築したnextサーバーがlabdaWebAdapterで動かない件]]
 [[lambda_web_adapterのDockerfile]]
 [[lambda_web_adapter_でnextをデプロイする際の参考資料]]
 
