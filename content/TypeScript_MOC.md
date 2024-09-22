@@ -5,6 +5,7 @@ tags:
 ---
 
 ## type-challenge 関連
+[[template literal typeでのinferはどう機能するのか？]]
 [[Typescriptのdeclareとは？（アンビエント宣言）]]
 [[関数はmapped typeではただの配列型になる]]
 [[keyof T extends never が意味するところ]]
