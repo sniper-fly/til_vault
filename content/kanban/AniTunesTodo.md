@@ -6,16 +6,19 @@ kanban-plugin: board
 
 ## Planning
 
-- [ ] AnimeThemeAPIのupdateを自動更新して反映させる
-- [ ] `__countrycodetoSpotifyTrack`のデータ消費が多すぎるので、ビット列で表現して削減する
-- [ ] TiDB serverlessにデプロイ
+- [ ] DB構造の修正：SpotifyTrackのAPsongidをnullableにしてアルバムソングとAPSongとの直接の関連削除
+- [ ] AniListテーブルの作成
+- [ ] MAL, AniList, AnimeThemeAPI自動更新
+- [ ] 再度のスクレイピング
 - [ ] AP毎日スクレイピング機能をlambdaに載せる
-- [ ] ひとつのアニメあたり大量のAPsongが一致してしまっているため、検索条件を工夫して特定を行う
+- [ ] APに追加された曲をMALに紐づけ
+- [ ] TiDB serverlessにデプロイ
+- [ ] Vitest導入
 
 
 ## In Progress
 
-- [ ] APに追加された曲をAnimeテーブルに自動ヒモ付(ローカル)
+- [ ] `__countrycodetoSpotifyTrack`のデータ消費が多すぎるので、ビット列で表現して削減する
 
 
 ## Complete
@@ -67,6 +70,8 @@ kanban-plugin: board
 
 ## archive
 
+- [ ] AnimeThemeAPIのupdateを自動更新して反映させる
+- [ ] ひとつのアニメあたり大量のAPsongが一致してしまっているため、検索条件を工夫して特定を行う
 - [ ] saveAPsongの戻り値にAPsongを指定して、selectNew関数に渡すことができるようにして同期関数化する
 - [ ] 大量検索結果に対応するため、スクロール即データインプットを実現する
 - [ ] scroll, waitforskeltonのtimeoutの決め打ちをやめてresultの数に比例するようにする

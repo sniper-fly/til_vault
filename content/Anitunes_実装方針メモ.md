@@ -5,6 +5,85 @@ tags:
 [[AniTunesTodo]]
 
 ===================================================
+[[2024-09-24]]
+URL更新の可能性もある
+webshareの1ヶ月ももうそろそろ切れる
+データ構造変更
+それをやるくらいなら一晩proxyを動かしてスクレイピングして再度失ったupdatedアニメを取得してDBを作り直したほうが早い
+
+絶対にやらないといけないこととしては
+
+- データ構造のリファクタ
+- 再度のスクレイピング
+- DBをTiDBにデプロイ
+- 自動更新機能をlambdaにデプロイ
+- APsongが属するアニメとMALもしくはAniListデータとの紐づけを図る
+
+下記のクエリで、全部のAniListのデータを取得可能
+```graphql
+{
+  Page(page: 369, perPage: 50) {
+	media(sort: UPDATED_AT, isLicensed:true, countryOfOrigin:JP, type:ANIME) {
+		id
+		idMal
+		siteUrl
+		updatedAt
+		title {
+		  native
+		  english
+		  romaji
+		}
+	}
+  }
+}
+```
+一応、`countryOfOrigin: CN`でpopularytyの上位50件ぐらいは取っておいても良い
+大体結果が18450件ぐらいになる
+
+どうしたら持続可能なサイトになるか？
+
+- AniPlaylistを毎日スクレイピングして最新の曲情報を取得
+	- スクレイピングプログラムをlambdaに載せる
+	- TiDBにデータを移行する
+
+- 最新のアニメ情報を取得して曲情報とタイトルを結びつける
+→最新のアニメ情報として、MALとAniList、どちらを使うか？
+AnimeThemeAPIに選抜されたアニメだけで良い、という説もある
+ATかAniLを毎日チェックして新たに追加されたアニメについてMALでのタイトルを取得する
+
+データ構造の変更
+APSongも表記ゆれが多すぎるのでAniPlSongにする
+~~→AniPlSong hasone AniPlMedia, AniPlMedia hasMany AniPlTitle
+の方がスッキリと整理できるのではないか？~~
+結局は同じことになるので、現状でおｋ
+
+```
+// このテーブルを作るメリットは？
+// これがないと困ることは？
+// →AniPlのアニメとMAL等のアニメを紐付けることが難しい
+// 作成にあたって難しいのは、ユニークキーがないこと
+// これならばクエリで後から作成可能なのでは？
+model AniPlAnime {
+  id              Int               @id @default(autoincrement())
+  aniPlSong       AniPlSong[]
+  aniPlAnimeTitle AniPlAnimeTitle[]
+}
+```
+上記テーブルの作成はID作成が難しい
+現状、AniPlのアニメのタイトルには重複がないのでuniqueな情報として使える
+が、これからもずっとそうとは限らない
+ただ、こちらの方がデータ構造から考えるとより素直な方法になる
+
+代わりに、AniPlSong, AniPlTitleにMALのidを持たせるという案
+メリット
+malIdはnullableになるが、やりたいこと（＝AniPlのアニメの概念とMALあるいはAniListとの連携）は直接可能になる
+
+同じAniPlSongに紐づくAniPlTitle全てのMalIDに対して更新を掛けなければならないので、冗長
+中間テーブルとしてAniPlAnimeを作った場合はこちらにMalIdを持たせるだけで良い
+
+テストの導入
+
+===================================================
 [[2024-09-21]]
 
 APsongのstatusがupdatedであってもなくても、SpotifyTrackのURI、もしくはappleMusicUrlが変更になっていたら値を更新したい
