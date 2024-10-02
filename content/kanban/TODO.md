@@ -99,6 +99,8 @@ tags:
 ## In Progress
 
 - [ ] 内定式に向けて自己紹介スライド
+- [ ] pixel network storage化
+- [ ] 旅行データをアルバム追加
 
 
 ## Complete
