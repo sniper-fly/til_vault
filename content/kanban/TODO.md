@@ -13,6 +13,8 @@ tags:
 - [ ] コンビニレシートを使ったDB設計
 	https://engineers.weddingpark.co.jp/mysql-database-design/
 - [ ] 曲とアニメの対応DBを作る
+- [ ] shadcn-uiの内部構造を探る
+	[shadcn/ui の内部構造を探る](https://zenn.dev/morinokami/articles/anatomy-of-shadcn-ui)
 - [ ] [[ChatGPTを活用したソフトウェア開発]]
 - [ ] React sentry エラー監視
 	https://sentry.io/for/react/?rdt_cid=4837438544186303114&utm_campaign=errors-fy24q3-react&utm_content=static-ad-reactterminalerror-trysentry&utm_id=1786538982646793101&utm_medium=paid-social&utm_source=reddit
@@ -100,11 +102,11 @@ tags:
 
 - [ ] 内定式に向けて自己紹介スライド
 - [ ] pixel network storage化
-- [ ] 旅行データをアルバム追加
 
 
 ## Complete
 
+- [ ] 旅行データをアルバム追加
 - [ ] [FM]他のひとのコードと比較
 - [ ] [FM]README整備&publish
 - [ ] AniPlaylistをスクレイピング

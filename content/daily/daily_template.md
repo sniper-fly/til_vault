@@ -3,7 +3,7 @@ tags:
   - daily
 ---
 
-## leetcode
+## SQL
 ## type-challenge
 
 ## Frontend Mentor
