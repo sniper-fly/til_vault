@@ -10,3 +10,16 @@ ALTER TABLE関連の様々なオプションについて
 ```sql
 ALTER TABLE posts DROP INDEX created_at_idx
 ```
+
+not null制約を加える
+```sql
+ALTER TABLE t1 MODIFY b INT NOT NULL;
+```
+
+check制約を加える
+```sql
+ALTER TABLE
+  FiscalYearTable1
+add
+  constraint valid_start_end check (start_date <= end_date);
+```

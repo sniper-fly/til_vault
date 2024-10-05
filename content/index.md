@@ -39,7 +39,6 @@ python, C++, bash, etc.
 
 [[Ubuntu_MOC]]
 
-
 [[Try&Error_MOC]]
 疑問点、よくわかっていないこと、新しい解決策を欲しているもの
 
