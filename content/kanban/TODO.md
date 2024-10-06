@@ -100,12 +100,13 @@ tags:
 
 ## In Progress
 
-- [ ] 内定式に向けて自己紹介スライド
 - [ ] pixel network storage化
+- [ ] 修士科目履修単位申請
 
 
 ## Complete
 
+- [ ] 内定式に向けて自己紹介スライド
 - [ ] 旅行データをアルバム追加
 - [ ] [FM]他のひとのコードと比較
 - [ ] [FM]README整備&publish

@@ -23,3 +23,9 @@ ALTER TABLE
 add
   constraint valid_start_end check (start_date <= end_date);
 ```
+
+特定のカラムをプライマリキーにする
+```sql
+ALTER TABLE   FiscalYearTable1 ADD PRIMARY KEY (fiscal_year);
+```
+

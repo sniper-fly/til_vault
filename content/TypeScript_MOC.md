@@ -5,6 +5,7 @@ tags:
 ---
 
 ## type-challenge 関連
+[[配列型を関数の引数に変換するには？]]
 [[template literal typeでのinferはどう機能するのか？]]
 [[Typescriptのdeclareとは？（アンビエント宣言）]]
 [[関数はmapped typeではただの配列型になる]]
