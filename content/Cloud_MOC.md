@@ -7,6 +7,8 @@ tags:
   - Terraform
 ---
 AWS, Terraform などのクラウド関連技術の話
+[[terraformのcloudfrontで指定できるorigin_idについて]]
+
 [[Terraformで削除時に自動実行されるスクリプトを設定したい]]
 
 [[AWSハンズオンをTerraformで再現する]] 執筆途中

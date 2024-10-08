@@ -102,6 +102,8 @@ tags:
 
 - [ ] pixel network storage化
 - [ ] 修士科目履修単位申請
+	キャンパスメール確認
+- [ ] 亀山会長質問4個
 
 
 ## Complete
