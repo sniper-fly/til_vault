@@ -14,3 +14,14 @@ styleタグを使う代替案がある
 ```html
 <div style="background-color: {{ userThemeColor }}"></div>
 ```
+
+Reactでは、styleにはオブジェクトを格納できる
+```jsx
+	// style={{ gridArea: `card${idx + 1}` }}
+	type Props = {
+	  style?: Object;
+	}
+	...
+
+    <div style={style} >
+```
