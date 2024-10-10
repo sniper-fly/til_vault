@@ -29,3 +29,9 @@ add
 ALTER TABLE   FiscalYearTable1 ADD PRIMARY KEY (fiscal_year);
 ```
 
+on delete cascade制約を加える
+```sql
+ALTER TABLE child_table 
+ADD CONSTRAINT fk_child_parent
+FOREIGN KEY (parent_id) REFERENCES parent_table(id) ON DELETE CASCADE;
+```

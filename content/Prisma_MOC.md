@@ -3,6 +3,8 @@ tags:
   - MOC
   - typescript/prisma
 ---
+[[prismaのJson型カラムで、配列が特定の値を含むレコードを抽出する]]
+
 [[prismaでupdateの際にオブジェクトの代わりにundefinedを渡すと？]]
 
 [[Prismaで複合キーを定義した時にデフォルトでつけられるidentifierの名前は？]]

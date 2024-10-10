@@ -3,6 +3,10 @@ tags:
   - MOC
   - SQL
 ---
+[[ERROR 1093 (HY000) You can't specify target table 'Absenteeism' for update in FROM clause]]
+
+[[MySQLで各テーブルが使用している記憶容量（ディスクスペース）を確認する]]
+
 [[mysqlのDockerコンテナで日本語入力ができないときの対処法]]
 
 [[mysqlでパスワードなしrootログインを可能にする]]
