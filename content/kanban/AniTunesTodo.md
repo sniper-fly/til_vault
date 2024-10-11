@@ -6,11 +6,10 @@ kanban-plugin: board
 
 ## Planning
 
-- [ ] DB構造の修正：SpotifyTrackのAPsongidをnullableにしてアルバムソングとAPSongとの直接の関連削除
 - [ ] AniListテーブルの作成
+- [ ] `__countrycodetoSpotifyTrack`のデータ消費が多すぎるので、ビット列で表現して削減する
 - [ ] MAL, AniList, AnimeThemeAPI自動更新
 - [ ] 再度のスクレイピング
-- [ ] AP毎日スクレイピング機能をlambdaに載せる
 - [ ] APに追加された曲をMALに紐づけ
 - [ ] TiDB serverlessにデプロイ
 - [ ] Vitest導入
@@ -18,11 +17,12 @@ kanban-plugin: board
 
 ## In Progress
 
-- [ ] `__countrycodetoSpotifyTrack`のデータ消費が多すぎるので、ビット列で表現して削減する
+- [ ] AP毎日スクレイピング機能をlambdaに載せる
 
 
 ## Complete
 
+- [ ] DB構造の修正：SpotifyTrackのAPsongidをnullableにしてアルバムソングとAPSongとの直接の関連削除
 - [ ] applemusicurlsのbulkinsert
 - [ ] spotifyAlbumsのbulkInsert
 - [ ] spotifyTracksのbulkInsert
