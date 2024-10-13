@@ -3,6 +3,8 @@ tags:
   - MOC
   - idea
 ---
+[[ガーリッシュナンバー迷言]]
+
 [[好きな食べ物]]
 
 [[novel_setting_idea]]
