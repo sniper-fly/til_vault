@@ -5,6 +5,30 @@ tags:
 [[AniTunesTodo]]
 
 ===================================================
+[[2024-10-17]]
+
+[GitHub - JupiterOne/playwright-aws-lambda: Support for runni...](https://github.com/JupiterOne/playwright-aws-lambda)
+lambdaで動くパッケージとのこと
+既存のコードがライブラリを入れ替えるだけで動くならこちらを使いたい
+
+インストールした`playwright-aws-lambda`でdailyCheckが動くか確認
+playwrightが動かない原因を調査
+`playwright-aws-lambda`単体では動かない。
+結局chromiumのインストールが必要
+
+[GitHub - Sparticuz/chromium: Chromium (x86-64) for Serverles...](https://github.com/Sparticuz/chromium)
+こちらは [chrome-aws-lambda](https://github.com/alixaxel/chrome-aws-lambda)の後継
+
+次回
+[GitHub - Sparticuz/chromium: Chromium (x86-64) for Serverles...](https://github.com/Sparticuz/chromium)
+こちらに記載の方法で縮小版chromiumをローカルで動かして今まで通りのことができるかどうかを調査
+[LambdaでPlaywrightを動かす(Lambdaレイヤー / コンテナ) | 豆蔵デベロッパーサイト](https://developer.mamezou-tech.com/blogs/2024/07/19/lambda-playwright-container-tips/)
+lambda layerを使う方法もあるがバンドルサイズが十分に小さくなれば使わなくても動作するはずなので、それを念頭において動作検証
+
+それでも動かない場合はDockerで妥協する
+[Running a Playwright script on AWS Lambda - Matt Steele](https://steele.blue/playwright-on-lambda/)
+
+===================================================
 [[2024-10-08]]
 
 複数のアルバムに重複して存在するトラックはあるか？
