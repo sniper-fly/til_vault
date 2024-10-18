@@ -7,6 +7,10 @@ tags:
   - Terraform
 ---
 AWS, Terraform などのクラウド関連技術の話
+[[chromium lambda layerをterraformで構築する]]
+
+[[terraformでlambdaをデプロイする際に環境変数を設定]]
+
 [[terraformのcloudfrontで指定できるorigin_idについて]]
 
 [[Terraformで削除時に自動実行されるスクリプトを設定したい]]

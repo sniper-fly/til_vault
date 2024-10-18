@@ -5,6 +5,7 @@ tags:
 ---
 
 ## type-challenge 関連
+[[配列の展開演算子とunionを組み合わせた時のflatten挙動について]]
 [[distributiveType上でのneverの取り扱われ方]]
 [[配列型を関数の引数に変換するには？]]
 [[template literal typeでのinferはどう機能するのか？]]
@@ -23,6 +24,10 @@ keyof, in, PropertyTypeなど
 [[Promise.raceで浮いたPromiseはどうなる？]]
 [[Promise.raceで、自前の関数を定義してどちらが先に返ってきたかを正確に判定する方法]]
 [[Promiseの外からリゾルバを呼ぶ]]
+
+[[importするファイルにcommonjsが混ざっている場合の解決法(esModuleInterop)]]
+
+[[default importにaliasを設定するにはどうしたら良いのか？]]
 
 [[winston logger ことはじめ]]
 

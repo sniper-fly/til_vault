@@ -18,6 +18,7 @@ kanban-plugin: board
 
 ## In Progress
 
+- [ ] Lambdaでplaywrightを動かす環境をTerraformで構築する
 
 
 ## Complete

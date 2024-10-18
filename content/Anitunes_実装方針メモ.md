@@ -5,6 +5,33 @@ tags:
 [[AniTunesTodo]]
 
 ===================================================
+[[2024-10-18]]
+[Releases · microsoft/playwright · GitHub](https://github.com/microsoft/playwright/releases)
+
+playwrightのリリース
+対応しているchromiumブラウザーのバージョンなどが記載されている
+
+縮小版chromiumで動作させる
+
+解決法について検索
+ライブラリを動かすだけで一苦労
+多少お金がかかったとしても、環境の統一と簡単さを優先してDockerでやるべき？
+→今後もplaywrightを色々活用していく可能性を考えると、lambdaレイヤーは便利...
+
+エラーの除去と動作確認
+
+縮小chromiumが期待通りに動作することを確認
+圧縮後の容量確認
+index.tsをビルドする
+DBが用意できていないので、まずはprismaを必要ない形でビルドする
+最新のupdateAtを取得する
+
+dailyCheckを無理矢理編集するのをやめてlaboに試験的なファイルを配置
+dotenvの設定がないせいでプロキシが動かない
+
+lambdaに無事にデプロイ出来たが、ブラウザのバイナリはパッケージに含まれてない？
+
+===================================================
 [[2024-10-17]]
 
 [GitHub - JupiterOne/playwright-aws-lambda: Support for runni...](https://github.com/JupiterOne/playwright-aws-lambda)
