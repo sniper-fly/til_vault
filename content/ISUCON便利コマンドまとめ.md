@@ -2,7 +2,9 @@
 tags:
   - ISUCON
 ---
-
+alpでnginxのログ分析
+`alp json --sort sum -r -m "/posts/[0-9]+,/@\w+,/image/\d+" -o count,method,uri,min,avg,max,sum --file /var/log/nginx/access.log
+`
 
 Percona Toolkit でSQLの分析を行う
 `pt-query-digest /var/log/mysql/mysql-slow.log`

@@ -3,6 +3,46 @@ tags:
   - ISUCON
 ---
 =========================
+[[2024-10-22]]
+nginxのログ設定ファイル
+スロークエリログの解析ツール導入
+percona-toolkitとmysqldumpslowの違い
+
+index設定前にまずベンチマークを測る
+
+bench変化なし
+indexの設定
+mysql slow query logを確認, 該当箇所のクエリ回数のexplainが減っているか
+後にもう一度bench
+最新のpprofを表示するサーバーを起動するコマンドを用意する
+pprofの変化を観察する
+pprofを読んでいるが、ここからボトルネックが読み取れない
+
+topの観察  / 事前のデータがないのでわからない
+
+静的ファイルのnginxによる配信
+
+画像ファイルをファイルに書き出す処理参考
+
+https://github.com/stefafafan/private-isu/pull/6/files
+
+=========================
+[[2024-10-21]]
+gitで余計に多くのファイルが管理されてしまっている
+addしたものを戻すには
+適切にgitignoreする
+
+pprofの検証
+
+TODO
+isucon9で vscode ssh
+pprofを使う
+
+golangの名前解決
+まずgolangが入っていないので、最新版をインストール
+`wget https://go.dev/dl/go1.23.2.linux-amd64.tar.gz`
+
+=========================
 [[2024-10-13]]
 reniceコマンド
 プロセスの優先度を変更する
