@@ -2,6 +2,33 @@
 tags:
   - ISUCON
 ---
+
+=========================
+[[2024-10-23]]
+
+golangで画像の静的ファイル化
+https://github.com/regohiro/private-isu/commit/1a0676fb96da00e3ddd4016a9212023f9463a33c
+https://github.com/regohiro/private-isu/commit/1c7ea1c77d780e7c2fade34007a66a1822de50fc
+
+資料の検索
+コードの解析、どちらの修正を選ぶか検討
+
+[ISUCONの素振りで private-isu をやってGo実装で32万点までひとまず行った - stefafafan ...](https://blog.stenyan.jp/entry/2022/07/18/224212)
+regohiroのはpostImageまで変更が及んでいた
+対して上記リンクのものではgetImageしか変えていなかった
+
+alpもしくはブラウザでの検証
+実際に検証するとなったら
+
+private-isuで作成した便利コマンド
+`clear-mysql-slow  clear-nginx-access  pprof  pprof-check  view-mysql-slow`
+
+nginxの設定を変更しても静的ファイルの配信が行われない
+再起動ミス？むしろベンチマークが遅くなっている
+
+nginxの設定を更新してブラウザで検証
+nginxで指定したパスが間違っていた模様
+
 =========================
 [[2024-10-22]]
 nginxのログ設定ファイル

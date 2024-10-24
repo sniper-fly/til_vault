@@ -10,8 +10,13 @@ tags:
 - [[covering indexとは？]]
 
 ## nginx
+[[nginxでのURLパスとディレクトリ名のパスに差異があるときのaliasによる対応方法について]]
+[[nginxで静的ファイルを配信する設定ファイルの例]]
 [[nginxでjs,cssファイルをキャッシュする]]
 [[nginxでコネクションを保持して使い回す設定例]]
+[[private-isuでnginxが出すlogをjson形式にする]]
+
+[[AMIを使ったISUCON環境の構築奮闘メモ]]
 
 [[isucon本用語まとめ]]
 
@@ -28,8 +33,6 @@ tags:
 [[ISUCON外部リンクまとめ]]
 
 [[ISUCON便利コマンドまとめ]]
-
-[[private-isuでnginxが出すlogをjson形式にする]]
 
 [[isuconをVagrantで動かした際にホスト側からウェブブラウザにアクセスする方法]]
 

@@ -5,7 +5,7 @@ tags:
 ---
 
 nginxで静的ファイルを配信する設定ファイルの例
-```
+```nginx
  location /image/ {
    root /home/isucon/private_isu/webapp/public/;
    expires 1d;
@@ -52,3 +52,5 @@ nginxで静的ファイルを配信する設定ファイルの例
 2. Nginxは`/home/isucon/private_isu/webapp/public/image/`ディレクトリでリクエストされたファイルを探す。
 3. ファイルが見つかれば、そのファイルを返し、クライアントに1日間キャッシュさせる。
 4. ファイルが見つからなければ、リクエストを`@app`に転送し、`localhost:8080`のアプリケーションサーバーにプロキシする。
+
+[[nginxでのURLパスとディレクトリ名のパスに差異があるときのaliasによる対応方法について]]
